@@ -1,0 +1,13 @@
+@import "./variable.scss";
+
+.logo-img {
+  width: 120px;
+}
+
+.nav-item {
+  display: flex;
+  gap: 16px;
+  li {
+    color: $primary;
+  }
+}
