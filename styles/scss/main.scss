@@ -6,4 +6,8 @@
   font-optical-sizing: auto;
   font-size: 64px;
   font-weight: 900;
+  @media (max-width: 576px) {
+    font-size: 32px;
+    text-align: center;
+  }
 }

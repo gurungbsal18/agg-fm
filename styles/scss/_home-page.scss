@@ -5,8 +5,6 @@
 }
 
 .nav-item {
-  display: flex;
-  gap: 16px;
   li {
     color: $primary;
   }
@@ -23,7 +21,7 @@
   background-position: center center;
   &::before {
     content: "";
-    background-color: #00000048;
+    background-color: #00000071;
     height: 100%;
     width: 100%;
     z-index: 1;
@@ -35,11 +33,13 @@
     content: "";
     background-image: url("/images/hero-banner.svg");
     position: absolute;
-    bottom: -20px;
+    bottom: -10px;
     right: 0;
     z-index: 2;
-    height: 130px;
+    height: 145px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .container {
     height: 100%;

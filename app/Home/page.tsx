@@ -9,7 +9,7 @@ export default function HomePage() {
       <div className="container mx-auto">
         <div className="hero-content">
           <h1 className="title text-white">{title}</h1>
-          <div className="flex items-start justify-start gap-4 w-full">
+          <div className="flex items-start justify-center md:justify-start gap-4 w-full">
             <Button className="" radius="sm" variant="shadow" color="primary">
               <LuSearch /> Explore Services
             </Button>

@@ -12,7 +12,7 @@ export default function Navbar() {
           height={1080}
           className="logo-img"
         />
-        <ul className="nav-item">
+        <ul className="nav-item hidden md:flex md:gap-4 md:items-center">
           <li>Home</li>
           <li>Our Services</li>
           <li>About us</li>
