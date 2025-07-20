@@ -1,15 +1,15 @@
 import Link from "next/link";
 import React from "react";
-import { LuSearch, LuMail } from "react-icons/lu";
+import { LuMail } from "react-icons/lu";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
 
 export default function TopBar() {
   const contactData = [
     {
       id: 1,
       content: "+60128907763",
-      icon: LuSearch,
+      icon: BsWhatsapp,
       link: "https://wa.me/+60128907763",
     },
     {
