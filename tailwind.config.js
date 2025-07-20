@@ -15,6 +15,7 @@ const config = {
       },
       colors: {
         primary: "#1C74B3",
+        lightPrimary: "#E8EEF1",
       },
     },
     container: {
