@@ -1,7 +1,7 @@
 @import "./variable.scss";
 
 .logo-img {
-  width: 120px;
+  width: 100px;
 }
 
 .nav-item {
@@ -9,5 +9,48 @@
   gap: 16px;
   li {
     color: $primary;
+  }
+}
+
+// hero section
+.hero {
+  position: relative;
+  background-image: url("/images/malaysia-home-banner.webp");
+  max-height: calc(100vh - 150px);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  &::before {
+    content: "";
+    background-color: #00000048;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    background-image: url("/images/hero-banner.svg");
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    z-index: 2;
+    height: 130px;
+    width: 100%;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 9;
   }
 }

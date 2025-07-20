@@ -1,1 +1,9 @@
 @use "home-page";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+.title {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-size: 64px;
+  font-weight: 900;
+}
