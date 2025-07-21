@@ -2,6 +2,7 @@ import React from "react";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { HiEnvelope } from "react-icons/hi2";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Link from "next/link";
 
 export default function FooterSection() {
   return (
@@ -12,14 +13,18 @@ export default function FooterSection() {
             <p className="font-bold text-xl">Contact</p>
             <div className="flex flex-col gap-2 mt-4">
               <ul className="flex flex-col gap-2 text-sm">
-                <li className="flex gap-1 items-center hover:underline">
-                  <IoLogoWhatsapp size={20} />
-                  +123
-                </li>
-                <li className="flex gap-1 items-center hover:underline">
-                  <HiEnvelope size={20} />
-                  contact@aggfsm.com
-                </li>
+                <Link href="https://wa.me/+60128907763">
+                  <li className="flex gap-1 items-center hover:underline">
+                    <IoLogoWhatsapp size={20} />
+                    +60128907763
+                  </li>
+                </Link>
+                <Link href="mailto:contact@aggsfm.com">
+                  <li className="flex gap-1 items-center hover:underline">
+                    <HiEnvelope size={20} />
+                    contact@aggfsm.com
+                  </li>
+                </Link>
                 <li className="flex gap-1 items-center hover:underline">
                   <FaMapMarkerAlt size={20} />
                   Kuala Lumpur, Malaysia
