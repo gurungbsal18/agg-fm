@@ -1,4 +1,4 @@
-@import "./variable.scss";
+@use "./variable.scss";
 
 .logo-img {
   width: 100px;
@@ -9,8 +9,11 @@
 }
 
 .nav-item {
+  position: relative;
   li {
-    color: $primary;
+    &:hover {
+      color: variable.$primary;
+    }
   }
 }
 
@@ -35,5 +38,23 @@
 
   &-expanded {
     display: block;
+  }
+}
+
+.service-menu-dropdown {
+  background-color: variable.$lightPrimary;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  z-index: 9999;
+  color: #fff;
+  height: max-content;
+  width: 400px;
+  li {
+    color: variable.$primary;
+    &:hover {
+      background-color: variable.$primary;
+      color: variable.$white;
+    }
   }
 }

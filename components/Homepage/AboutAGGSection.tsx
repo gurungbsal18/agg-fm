@@ -8,7 +8,7 @@ export default function AboutAAboutAGGSection() {
     <div className="container home-about-agg-section">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="col-span-1">
-          <SectionTitle title="About AGG Facilities Management" />
+          <SectionTitle title="About AGG Facilities Management PLT" />
           <div className="text-justify my-4">
             <p>
               AGG Facilities Management PLT is an integrated facilities
@@ -21,7 +21,7 @@ export default function AboutAAboutAGGSection() {
             <p>
               By leveraging advanced technology, we also offer market-value
               services to a variety of sectors, both locally and
-              internationally.Our customers depend on us to provide essential
+              internationally. Our customers depend on us to provide essential
               services for their businesses across a diverse range of
               industries.
             </p>
@@ -39,11 +39,11 @@ export default function AboutAAboutAGGSection() {
 
         <div className="col-span-1">
           <Image
-            src="/images/construction-dark.webp"
-            alt="construction work"
+            src="/images/homepage-1.webp"
+            alt="condominium malaysia"
             width={1920}
             height={1080}
-            className=""
+            className="object-cover object-center"
           />
         </div>
       </div>

@@ -93,8 +93,6 @@ export default function FooterSection() {
           </div>
         </div>
 
-        {/* <hr className="text-gray-400" /> */}
-
         <div className="flex flex-col gap-2 items-center pt-8 border-t-1 border-gray-400">
           <div className="footer-logo">
             <Image
