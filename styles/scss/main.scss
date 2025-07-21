@@ -1,3 +1,4 @@
+@use "./variable.scss";
 @use "home-page";
 @use "./navbar";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
@@ -11,4 +12,25 @@
     font-size: 32px;
     text-align: center;
   }
+}
+
+.section-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: variable.$primary;
+  text-align: left;
+  @media (max-width: 576px) {
+    text-align: center;
+    font-size: 32px;
+  }
+}
+
+.custom-icon {
+  background-color: variable.$lightPrimary;
+  padding: 4px;
+  border-radius: 50%;
+  color: variable.$primary;
+  width: 36px;
+  height: 36px;
 }

@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import TopBar from "@/components/topbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -47,6 +48,7 @@ export default function RootLayout({
             <TopBar />
             <Navbar />
             <main className="flex-grow">{children}</main>
+            <Footer />
           </div>
         </Providers>
       </body>
