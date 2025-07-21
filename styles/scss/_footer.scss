@@ -1,0 +1,56 @@
+@use "./variable.scss";
+
+.footer {
+  position: relative;
+  margin-top: 180px;
+  &::before {
+    content: "";
+    background-image: url(/images/footer-banner.svg);
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    top: -170px;
+    left: 0;
+    z-index: 1;
+    background-position: center center;
+  }
+}
+
+.need-help-section {
+  position: relative;
+  &::after {
+    content: "";
+    background: url("/images/malaysia-map.png") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 347px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.footer-logo {
+  background-color: variable.$white;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.footer-social-icon {
+  background-color: variable.$primary;
+  padding: 4px;
+  height: 24px;
+  width: 24px;
+  color: variable.$white;
+  border-radius: 100%;
+  &:hover {
+    background-color: variable.$lightPrimary;
+    color: variable.$primary;
+  }
+}

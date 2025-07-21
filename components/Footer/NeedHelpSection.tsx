@@ -6,7 +6,7 @@ import { LuMail } from "react-icons/lu";
 
 export default function NeedHelpSection() {
   return (
-    <div className="container">
+    <div className="container need-help-section">
       <div className="bg-primary rounded-2xl flex flex-col items-center justify-center gap-8 px-4 py-16">
         <h4 className="text-4xl font-bold text-white">Need Help?</h4>
         <div className="text-center">

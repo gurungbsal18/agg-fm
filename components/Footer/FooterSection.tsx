@@ -3,12 +3,15 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { HiEnvelope } from "react-icons/hi2";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
 
 export default function FooterSection() {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary footer">
       <div className="container text-white py-16">
-        <div className="grid grid-1 md:grid-cols-12 gap-8">
+        <div className="grid grid-1 md:grid-cols-12 gap-8 pb-8">
           <div className="col-span-1 md:col-span-2">
             <p className="font-bold text-xl">Contact</p>
             <div className="flex flex-col gap-2 mt-4">
@@ -86,6 +89,28 @@ export default function FooterSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full"
               ></iframe>
+            </div>
+          </div>
+        </div>
+
+        {/* <hr className="text-gray-400" /> */}
+
+        <div className="flex flex-col gap-2 items-center pt-8 border-t-1 border-gray-400">
+          <div className="footer-logo">
+            <Image
+              src="/aggfm-logo.svg"
+              alt="aggfm logo"
+              height={1920}
+              width={1080}
+            />
+          </div>
+          <p className="font-semibold">AGG Soft Facilities Management</p>
+          <div className="bg-white text-primary w-1/4 flex flex-col gap-1 items-center justify-center rounded-full py-2">
+            <p>Follow us</p>
+            <div className="flex gap-2">
+              <FaFacebookF size={8} className="footer-social-icon" />
+              <FaInstagramSquare size={8} className="footer-social-icon" />{" "}
+              <FaLinkedinIn size={8} className="footer-social-icon" />
             </div>
           </div>
         </div>
