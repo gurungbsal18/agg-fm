@@ -9,17 +9,37 @@ import {
 } from "react-icons/md";
 
 const ServiceMenuList = [
-  { id: 1, title: "Building Maintenance" },
-  { id: 2, title: "Concierge Services" },
-  { id: 3, title: "Cleaning Professionals" },
-  { id: 4, title: "Swimming Pool and Maintenance Services" },
-  { id: 5, title: "Landscape Maintenance Services" },
-  { id: 6, title: "Mechanical, Electrical, and Plumbing (MEP)" },
-  { id: 7, title: "Defaulters Management and Recovery Services" },
-  { id: 8, title: "Security Guard Services" },
-  { id: 9, title: "Inventory Fixed Assets Tagging Services" },
-  { id: 10, title: "AGM/EGM Services" },
-  { id: 11, title: "Valet Parking" },
+  { id: 1, title: "Building Maintenance", link: "#" },
+  { id: 2, title: "Concierge Services", link: "#" },
+  { id: 3, title: "Cleaning Professionals", link: "#" },
+  {
+    id: 4,
+    title: "Swimming Pool and Maintenance Services",
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Landscape Maintenance Services",
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "Mechanical, Electrical, and Plumbing (MEP)",
+    link: "#",
+  },
+  {
+    id: 7,
+    title: "Defaulters Management and Recovery Services",
+    link: "#",
+  },
+  { id: 8, title: "Security Guard Services", link: "#" },
+  {
+    id: 9,
+    title: "Inventory Fixed Assets Tagging Services",
+    link: "#",
+  },
+  { id: 10, title: "AGM/EGM Services", link: "#" },
+  { id: 11, title: "Valet Parking", link: "#" },
 ];
 
 export default function Navbar() {
@@ -75,15 +95,16 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="nav-item hidden md:flex md:gap-4 md:items-center">
-          <li>Home</li>
-
+          <Link href="/">
+            <li>Home</li>
+          </Link>
           <li
             className="service-menu relative hover:cursor-pointer"
             ref={serviceMenuRef}
           >
             <p
               onClick={handleServiceMenuDropdown}
-              className="flex justify-between items-center gap-2"
+              className="flex justify-between items-center gap-4"
             >
               Our Services
               {serviceMenuOpen ? (
@@ -94,17 +115,17 @@ export default function Navbar() {
             </p>
 
             <div
-              className={`absolute top-full left-0 w-[300px] bg-white shadow-md transition-all duration-300 overflow-hidden z-50 ${
+              className={`absolute top-10 left-[-80] w-[400px] bg-white shadow-md transition-all duration-300 z-50 overflow-hidden ${
                 serviceMenuOpen
-                  ? "max-h-[500px] opacity-100"
-                  : "max-h-0 opacity-0"
+                  ? "max-h-[500px] opacity-100 pointer-events-auto"
+                  : "max-h-0 opacity-0 pointer-events-none"
               }`}
             >
-              <ul className="flex flex-col py-2">
+              <ul className="flex flex-col py-2 bg-light-primary service-menu-dropdown">
                 {ServiceMenuList.map((list) => (
-                  <li key={list.id} className="px-4 py-2 hover:bg-gray-100">
-                    {list.title}
-                  </li>
+                  <Link key={list.id} href={list.link}>
+                    <li className="px-4 py-2">{list.title}</li>
+                  </Link>
                 ))}
               </ul>
             </div>

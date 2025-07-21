@@ -11,8 +11,8 @@ export default function FooterSection() {
   return (
     <div className="bg-primary footer">
       <div className="container text-white py-16">
-        <div className="grid grid-1 md:grid-cols-12 gap-8 pb-8">
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-1 xl:grid-cols-12 gap-8 pb-8">
+          <div className="col-span-1 xl:col-span-2">
             <p className="font-bold text-xl">Contact</p>
             <div className="flex flex-col gap-2 mt-4">
               <ul className="flex flex-col gap-2 text-sm">
@@ -37,7 +37,7 @@ export default function FooterSection() {
           </div>
 
           {/* useful link section */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 xl:col-span-2">
             <p className="font-bold text-xl">Useful Links</p>
             <div className="flex flex-col gap-2 my-4">
               <ul className="flex flex-col gap-2 text-sm">
@@ -49,7 +49,7 @@ export default function FooterSection() {
           </div>
 
           {/* our services section */}
-          <div className="col-span-1 md:col-span-3">
+          <div className="col-span-1 xl:col-span-3">
             <p className="font-bold text-xl">Useful Services</p>
             <div className="flex flex-col gap-2 my-4">
               <ul className="flex flex-col gap-2 text-sm">

@@ -43,15 +43,9 @@
 
 .service-menu-dropdown {
   background-color: variable.$lightPrimary;
-  position: absolute;
-  top: 30px;
-  left: 0px;
-  z-index: 9999;
-  color: #fff;
-  height: max-content;
-  width: 400px;
+  color: black;
+
   li {
-    color: variable.$primary;
     &:hover {
       background-color: variable.$primary;
       color: variable.$white;
