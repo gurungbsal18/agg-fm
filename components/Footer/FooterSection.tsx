@@ -76,9 +76,9 @@ export default function FooterSection() {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127480.96968843792!2d101.64475629395612!3d3.1525576860397075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2snp!4v1753100492377!5m2!1sen!2snp"
                 height="450"
-                allowfullscreen="true"
+                allowFullScreen={true}
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="w-full"
               ></iframe>
             </div>
