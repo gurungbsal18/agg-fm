@@ -38,7 +38,7 @@ const serviceData: serviceDataProps[] = [
     id: 3,
     title: "Cleaning Professionals",
     icon: MdCleaningServices,
-    link: "/",
+    link: "/cleaning-professionals",
   },
   {
     id: 4,
