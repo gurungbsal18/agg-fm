@@ -79,8 +79,14 @@ export default function ConciergeServiceTabView() {
   const renderTabData = (data: ServiceData[]) => {
     return data.map((list: ServiceData) => (
       <div key={list.id} className="grid grid-1 md:grid-cols-12 gap-8 mt-8">
-        <div className="col-span12 md:col-span-4">
-          <Image src={list.image} alt={list.title} width={1920} height={1080} />
+        <div className="col-span-12 md:col-span-4">
+          <Image
+            src={list.image}
+            alt={list.title}
+            width={1920}
+            height={1080}
+            className="rounded-lg shadow-2xl"
+          />
         </div>
         <div className="flex flex-col gap-4 col-span-12 md:col-span-8">
           <h4 className="content-title">{list.title}</h4>
@@ -99,13 +105,25 @@ export default function ConciergeServiceTabView() {
   return (
     <div className="mt-8">
       <div className="flex gap-8">
-        <Button radius="sm" onPress={() => setActiveTab("security")}>
+        <Button
+          radius="sm"
+          onPress={() => setActiveTab("security")}
+          color={activeTab == "security" ? "primary" : "default"}
+        >
           Security and Access Control
         </Button>
-        <Button radius="sm" onPress={() => setActiveTab("convenience")}>
+        <Button
+          radius="sm"
+          onPress={() => setActiveTab("convenience")}
+          color={activeTab == "convenience" ? "primary" : "default"}
+        >
           Convenience and Lifestyle Services
         </Button>
-        <Button radius="sm" onPress={() => setActiveTab("personalised")}>
+        <Button
+          radius="sm"
+          onPress={() => setActiveTab("personalised")}
+          color={activeTab == "personalised" ? "primary" : "default"}
+        >
           Personalised Assistance
         </Button>
       </div>
