@@ -46,6 +46,7 @@ const generalCleaningData: cleaningProfessionalsDataProps[] = [
 const executiveCleaningData: cleaningProfessionalsDataProps[] = [
   {
     title: "Executive cleaning",
+    image: "/images/executive-clean.webp",
     detail: [
       {
         id: 1,
@@ -74,6 +75,7 @@ const executiveCleaningData: cleaningProfessionalsDataProps[] = [
 const keyCleanData: cleaningProfessionalsDataProps[] = [
   {
     title: "Key cleaning area",
+    image: "/images/key-cleaning.webp",
     detail: [
       {
         id: 1,

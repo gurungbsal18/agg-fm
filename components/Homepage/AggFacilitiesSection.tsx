@@ -44,19 +44,19 @@ const serviceData: serviceDataProps[] = [
     id: 4,
     title: "Swimming Pool Maintenance Services",
     icon: LiaSwimmingPoolSolid,
-    link: "/",
+    link: "/swimming-pool-and-maintenance-services",
   },
   {
     id: 5,
     title: "Landscape Maintenance Services",
     icon: GrUserWorker,
-    link: "/",
+    link: "/landscape-maintenance-services",
   },
   {
     id: 6,
     title: "Mechanical, Electrical and Plumbing (MEP)",
     icon: HiOutlineWrenchScrewdriver,
-    link: "/",
+    link: "/mep-services",
   },
   {
     id: 7,

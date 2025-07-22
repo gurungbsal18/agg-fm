@@ -15,17 +15,17 @@ const ServiceMenuList = [
   {
     id: 4,
     title: "Swimming Pool and Maintenance Services",
-    link: "#",
+    link: "/swimming-pool-and-maintenance-services",
   },
   {
     id: 5,
     title: "Landscape Maintenance Services",
-    link: "#",
+    link: "/landscape-maintenance-services",
   },
   {
     id: 6,
     title: "Mechanical, Electrical, and Plumbing (MEP)",
-    link: "#",
+    link: "mep-services",
   },
   {
     id: 7,

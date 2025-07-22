@@ -12,25 +12,32 @@ export default function FooterSection() {
     <div className="bg-primary footer">
       <div className="container text-white py-16">
         <div className="grid grid-1 xl:grid-cols-12 gap-8 pb-8">
-          <div className="col-span-1 xl:col-span-2">
+          <div className="col-span-1 xl:col-span-3">
             <p className="font-bold text-xl">Contact</p>
             <div className="flex flex-col gap-2 mt-4">
               <ul className="flex flex-col gap-2 text-sm">
                 <Link href="https://wa.me/+60128907763">
                   <li className="flex gap-1 items-center hover:underline">
-                    <IoLogoWhatsapp size={20} />
+                    <span>
+                      <IoLogoWhatsapp size={20} />
+                    </span>
                     +60128907763
                   </li>
                 </Link>
                 <Link href="mailto:contact@aggsfm.com">
                   <li className="flex gap-1 items-center hover:underline">
-                    <HiEnvelope size={20} />
+                    <span>
+                      <HiEnvelope size={20} />
+                    </span>
                     contact@aggfsm.com
                   </li>
                 </Link>
                 <li className="flex gap-1 items-center hover:underline">
-                  <FaMapMarkerAlt size={20} />
-                  Kuala Lumpur, Malaysia
+                  <span>
+                    <FaMapMarkerAlt size={20} />
+                  </span>
+                  15th Floor, Megan Legasi, Millerz Square, 357, Old Klang Rd,
+                  58200 Kuala Lumpur, Malaysia
                 </li>
               </ul>
             </div>
@@ -53,36 +60,59 @@ export default function FooterSection() {
             <p className="font-bold text-xl">Useful Services</p>
             <div className="flex flex-col gap-2 my-4">
               <ul className="flex flex-col gap-2 text-sm">
-                <li className="hover:underline">Building Maintenance</li>
-                <li className="hover:underline">Concierge Services</li>
-                <li className="hover:underline">Cleaning Professionals</li>
-                <li className="hover:underline">
-                  Swimming Pool Maintenance Services
-                </li>
-                <li className="hover:underline">
-                  Landscape Maintenance Services
-                </li>
-                <li className="hover:underline">
-                  Mechanical, Electrical, and Plumbing (MEP)
-                </li>
-                <li className="hover:underline">
-                  Defaulters Management and Recovery Services
-                </li>
-                <li className="hover:underline">Security Guard Services</li>
-                <li className="hover:underline">
-                  Inventory Fixed Assests Tagging Management Services
-                </li>
-                <li className="hover:underline">AGM/EGM Services</li>
-                <li className="hover:underline">Valet Parking Services</li>
+                <Link href="/building-maintenance">
+                  <li className="hover:underline">Building Maintenance</li>
+                </Link>
+                <Link href="/concierge-services">
+                  <li className="hover:underline">Concierge Services</li>
+                </Link>
+                <Link href="/cleaning-professionals">
+                  <li className="hover:underline">Cleaning Professionals</li>
+                </Link>
+                <Link href="/swimming-pool-and-maintenance-services">
+                  <li className="hover:underline">
+                    Swimming Pool and Maintenance Services
+                  </li>
+                </Link>
+                <Link href="/landscape-maintenance-services">
+                  <li className="hover:underline">
+                    Landscape Maintenance Services
+                  </li>
+                </Link>
+                <Link href="/mep-services">
+                  <li className="hover:underline">
+                    Mechanical, Electrical, and Plumbing (MEP)
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li className="hover:underline">
+                    Defaulters Management and Recovery Services
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li className="hover:underline">Security Guard Services</li>
+                </Link>
+                <Link href="/">
+                  <li className="hover:underline">
+                    Inventory Fixed Assests Tagging Management Services
+                  </li>
+                </Link>
+                <Link href="/">
+                  <li className="hover:underline">AGM/EGM Services</li>
+                </Link>
+                <Link href="/">
+                  <li className="hover:underline">Valet Parking Services</li>
+                </Link>
               </ul>
             </div>
           </div>
 
-          <div className="col-span-1 md:col-span-5">
+          <div className="col-span-1 md:col-span-4">
             <p className="font-bold text-xl">Our Location</p>
             <div className="flex flex-col gap-2 my-4">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127480.96968843792!2d101.64475629395612!3d3.1525576860397075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2snp!4v1753100492377!5m2!1sen!2snp"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.00226890945135!2d101.6730226495987!3d3.0898259999999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4b4087c1e0e3%3A0x5a02f4dc27e411fc!2sMegan%20Legasi%20%E2%80%A2%20Millerz%20Square%20%E2%80%A2%20OKR!5e0!3m2!1sen!2snp!4v1753214153741!5m2!1sen!2snp"
+                width="600"
                 height="450"
                 allowFullScreen={true}
                 loading="lazy"

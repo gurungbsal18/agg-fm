@@ -5,7 +5,10 @@ import React from "react";
 export default function CleaningProfessionalsPage() {
   return (
     <div>
-      <PageHeader title="AGGFM's Cleaning Professionals" />
+      <PageHeader
+        title="AGGFM's Cleaning Professionals"
+        image="/images/cleaning-banner.webp"
+      />
       <div className="container">
         <h4 className="content-title">AGGFM's Cleaning Professionals</h4>
         <div className="content">
