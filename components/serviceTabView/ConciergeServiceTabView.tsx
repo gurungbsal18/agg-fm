@@ -2,6 +2,9 @@
 import { Button } from "@heroui/button";
 import Image from "next/image";
 import React, { useState } from "react";
+import { GoShieldCheck } from "react-icons/go";
+import { HiOutlineHome } from "react-icons/hi2";
+import { HiUser } from "react-icons/hi2";
 
 // -------------------------
 // ✅ Types
@@ -111,6 +114,7 @@ export default function ConciergeServiceTabView() {
           color={activeTab === "security" ? "primary" : "primary"}
           variant={activeTab === "security" ? "solid" : "flat"}
         >
+          <GoShieldCheck size={18} />
           Security and Access Control
         </Button>
         <Button
@@ -119,6 +123,7 @@ export default function ConciergeServiceTabView() {
           color={activeTab === "convenience" ? "primary" : "primary"}
           variant={activeTab === "convenience" ? "solid" : "flat"}
         >
+          <HiOutlineHome size={18} />
           Convenience and Lifestyle Services
         </Button>
         <Button
@@ -127,6 +132,7 @@ export default function ConciergeServiceTabView() {
           color={activeTab === "personalised" ? "primary" : "primary"}
           variant={activeTab === "personalised" ? "solid" : "flat"}
         >
+          <HiUser size={18} />
           Personalised Assistance
         </Button>
       </div>

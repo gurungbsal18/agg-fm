@@ -11,7 +11,7 @@ import {
 const ServiceMenuList = [
   { id: 1, title: "Building Maintenance", link: "/building-maintenance" },
   { id: 2, title: "Concierge Services", link: "/concierge-services" },
-  { id: 3, title: "Cleaning Professionals", link: "#" },
+  { id: 3, title: "Cleaning Professionals", link: "/cleaning-professionals" },
   {
     id: 4,
     title: "Swimming Pool and Maintenance Services",
