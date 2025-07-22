@@ -9,8 +9,8 @@ import {
 } from "react-icons/md";
 
 const ServiceMenuList = [
-  { id: 1, title: "Building Maintenance", link: "#" },
-  { id: 2, title: "Concierge Services", link: "#" },
+  { id: 1, title: "Building Maintenance", link: "/building-maintenance" },
+  { id: 2, title: "Concierge Services", link: "/concierge-services" },
   { id: 3, title: "Cleaning Professionals", link: "#" },
   {
     id: 4,
@@ -123,7 +123,11 @@ export default function Navbar() {
             >
               <ul className="flex flex-col py-2 bg-light-primary service-menu-dropdown">
                 {ServiceMenuList.map((list) => (
-                  <Link key={list.id} href={list.link}>
+                  <Link
+                    key={list.id}
+                    href={list.link}
+                    onClick={() => setServiceMenuOpen(false)}
+                  >
                     <li className="px-4 py-2">{list.title}</li>
                   </Link>
                 ))}

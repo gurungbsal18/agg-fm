@@ -1,6 +1,7 @@
 @use "./variable.scss";
 @use "home-page";
 @use "./navbar";
+@use "./page-header";
 @use "./footer";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
@@ -34,4 +35,15 @@
   color: variable.$primary;
   width: 36px;
   height: 36px;
+}
+
+.content {
+  p {
+    margin-bottom: 16px;
+  }
+  &-title {
+    color: variable.$primary;
+    font-size: 24px;
+    font-weight: 600;
+  }
 }

@@ -5,7 +5,7 @@ import CopyrightSection from "./CopyrightSection";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col gap-32">
+    <div className="flex flex-col gap-32 mt-24">
       <NeedHelpSection />
       <div>
         <FooterSection />

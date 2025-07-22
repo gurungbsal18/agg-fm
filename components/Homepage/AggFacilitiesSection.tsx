@@ -18,11 +18,13 @@ const serviceData = [
     id: 1,
     title: "Building Maintenance",
     icon: RiBuildingLine,
+    link: "/building-maintenance",
   },
   {
     id: 2,
     title: "Concierge Services",
     icon: LuUserCog,
+    link: "/concierge-services",
   },
   {
     id: 3,
