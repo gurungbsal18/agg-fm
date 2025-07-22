@@ -107,7 +107,7 @@ export default function ConciergeServiceTabView() {
 
   return (
     <div className="mt-8">
-      <div className="flex gap-8">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8">
         <Button
           radius="sm"
           onPress={() => setActiveTab("security")}

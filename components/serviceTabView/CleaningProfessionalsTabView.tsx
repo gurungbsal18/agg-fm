@@ -128,7 +128,7 @@ export default function CleaningProfessionalsTabView() {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row gap-4 mt-8">
+      <div className="flex flex-col md:flex-row gap-4 md:gap-8 mt-8">
         <Button
           onPress={() => setActiveTab("general")}
           color={activeTab === "general" ? "primary" : "primary"}
