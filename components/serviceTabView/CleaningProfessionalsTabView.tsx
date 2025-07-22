@@ -129,19 +129,22 @@ export default function CleaningProfessionalsTabView() {
       <div className="flex flex-col md:flex-row gap-4 mt-8">
         <Button
           onPress={() => setActiveTab("general")}
-          color={activeTab == "general" ? "primary" : "default"}
+          color={activeTab === "general" ? "primary" : "primary"}
+          variant={activeTab === "general" ? "solid" : "flat"}
         >
           General and common area cleaning
         </Button>
         <Button
           onPress={() => setActiveTab("executive")}
-          color={activeTab == "executive" ? "primary" : "default"}
+          color={activeTab === "executive" ? "primary" : "primary"}
+          variant={activeTab === "executive" ? "solid" : "flat"}
         >
           Executive cleaning
         </Button>
         <Button
           onPress={() => setActiveTab("keyClean")}
-          color={activeTab == "keyClean" ? "primary" : "default"}
+          color={activeTab === "keyClean" ? "primary" : "primary"}
+          variant={activeTab === "keyClean" ? "solid" : "flat"}
         >
           Key cleaning area
         </Button>

@@ -108,21 +108,24 @@ export default function ConciergeServiceTabView() {
         <Button
           radius="sm"
           onPress={() => setActiveTab("security")}
-          color={activeTab == "security" ? "primary" : "default"}
+          color={activeTab === "security" ? "primary" : "primary"}
+          variant={activeTab === "security" ? "solid" : "flat"}
         >
           Security and Access Control
         </Button>
         <Button
           radius="sm"
           onPress={() => setActiveTab("convenience")}
-          color={activeTab == "convenience" ? "primary" : "default"}
+          color={activeTab === "convenience" ? "primary" : "primary"}
+          variant={activeTab === "convenience" ? "solid" : "flat"}
         >
           Convenience and Lifestyle Services
         </Button>
         <Button
           radius="sm"
           onPress={() => setActiveTab("personalised")}
-          color={activeTab == "personalised" ? "primary" : "default"}
+          color={activeTab === "personalised" ? "primary" : "primary"}
+          variant={activeTab === "personalised" ? "solid" : "flat"}
         >
           Personalised Assistance
         </Button>
