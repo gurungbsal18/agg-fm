@@ -36,8 +36,10 @@ export default function FooterSection() {
                   <span>
                     <FaMapMarkerAlt size={20} />
                   </span>
-                  15th Floor, Megan Legasi, Millerz Square, 357, Old Klang Rd,
-                  58200 Kuala Lumpur, Malaysia
+                  <p>
+                    15th Floor, Megan Legasi, Millerz Square, 357, Old Klang Rd,
+                    58200 Kuala Lumpur, Malaysia
+                  </p>
                 </li>
               </ul>
             </div>
