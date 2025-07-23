@@ -32,7 +32,11 @@ const ServiceMenuList = [
     title: "Defaulters Management and Recovery Services",
     link: "/aggfm-defaulters-management-and-recovery-services",
   },
-  { id: 8, title: "Security Guard Services", link: "#" },
+  {
+    id: 8,
+    title: "Security Guard Services",
+    link: "/security-guards-and-services",
+  },
   {
     id: 9,
     title: "Inventory Fixed Assets Tagging Services",

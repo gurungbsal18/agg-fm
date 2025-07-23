@@ -68,7 +68,7 @@ const serviceData: serviceDataProps[] = [
     id: 8,
     title: "Security Guard Services",
     icon: FaUserShield,
-    link: "/",
+    link: "/security-guards-and-services",
   },
   {
     id: 9,
