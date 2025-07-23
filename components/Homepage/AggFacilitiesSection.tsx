@@ -74,19 +74,19 @@ const serviceData: serviceDataProps[] = [
     id: 9,
     title: "Inventory Fixed Assest Tagging Service",
     icon: GoChecklist,
-    link: "/",
+    link: "/inventory-fixed-assets-tagging-service",
   },
   {
     id: 10,
     title: "AGM/EGM Services",
     icon: FaUsers,
-    link: "/",
+    link: "/agm-egm-services",
   },
   {
     id: 11,
     title: "Valet Parking Services",
     icon: FaCar,
-    link: "/",
+    link: "/valet-parking",
   },
 ];
 

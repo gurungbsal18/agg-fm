@@ -40,10 +40,10 @@ const ServiceMenuList = [
   {
     id: 9,
     title: "Inventory Fixed Assets Tagging Services",
-    link: "#",
+    link: "/inventory-fixed-assets-tagging-service",
   },
-  { id: 10, title: "AGM/EGM Services", link: "#" },
-  { id: 11, title: "Valet Parking", link: "#" },
+  { id: 10, title: "AGM/EGM Services", link: "/agm-egm-services" },
+  { id: 11, title: "Valet Parking", link: "valet-parking" },
 ];
 
 export default function Navbar() {
