@@ -145,21 +145,41 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Menu Toggle Button */}
-        <div className="block md:hidden">
-          <MdOutlineMenu size={32} onClick={handleMobileMenuBtn} />
+        <div
+          className="block md:hidden relative w-8 h-8 cursor-pointer"
+          onClick={handleMobileMenuBtn}
+        >
+          <div
+            className={`absolute top-0 left-0 transition-transform duration-300 ease-in-out transform ${
+              isOpen
+                ? "opacity-100 scale-100 rotate-0"
+                : "opacity-0 scale-75 rotate-90 pointer-events-none"
+            }`}
+          >
+            <MdOutlineMenu size={28} />
+          </div>
+          <div
+            className={`absolute top-0 left-0 transition-transform duration-300 ease-in-out transform ${
+              !isOpen
+                ? "opacity-100 scale-100 rotate-0"
+                : "opacity-0 scale-75 rotate-90 pointer-events-none"
+            }`}
+          >
+            <MdClose size={28} />
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu: Slide from right */}
       <div
-        className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-30 right-0 h-full w-full bg-light-primary z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-full" : "translate-x-0"
         }`}
       >
-        <div className="flex flex-col h-full justify-between p-6">
+        <div className="flex flex-col h-full justify-between p-4">
           <div>
-            <ul className="space-y-4 text-lg">
-              <li>
+            <ul className="space-y-4 text-sm">
+              <li className="font-bold text-primary">
                 <Link
                   href="/"
                   onClick={() => {
@@ -170,42 +190,30 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="relative">
-                <div
-                  className="flex justify-between items-center cursor-pointer"
-                  onClick={handleServiceMenuDropdown}
-                >
+                <div className="flex justify-between items-center cursor-pointer font-bold text-primary">
                   Our Services
-                  {serviceMenuOpen ? (
-                    <MdOutlineKeyboardArrowUp />
-                  ) : (
-                    <MdOutlineKeyboardArrowDown />
-                  )}
                 </div>
-                <div
-                  className={`transition-all duration-300 overflow-hidden bg-light-primary shadow-md rounded ${
-                    serviceMenuOpen
-                      ? "max-h-[500px] opacity-100 pointer-events-auto mt-2"
-                      : "max-h-0 opacity-0 pointer-events-none"
-                  }`}
-                >
-                  <ul>
-                    {ServiceMenuList.map((list) => (
-                      <li key={list.id} className="px-4 py-2">
-                        <Link
-                          href={list.link}
-                          onClick={() => {
-                            setServiceMenuOpen(false);
-                            setIsOpen(true);
-                          }}
-                        >
-                          {list.title}
-                        </Link>
-                      </li>
-                    ))}
+                <div>
+                  <ul className="bg-light-primary">
+                    {ServiceMenuList.map((list) => {
+                      return (
+                        <li key={list.id} className="px-4 py-2">
+                          <Link
+                            href={list.link}
+                            onClick={() => {
+                              setServiceMenuOpen(false);
+                              setIsOpen(true);
+                            }}
+                          >
+                            {list.title}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               </li>
-              <li>
+              <li className="font-bold text-primary">
                 <Link
                   href="#"
                   onClick={() => {
@@ -215,7 +223,7 @@ export default function Navbar() {
                   About us
                 </Link>
               </li>
-              <li>
+              <li className="font-bold text-primary">
                 <Link
                   href="#"
                   onClick={() => {
@@ -226,12 +234,6 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div
-            className="bg-red-200 text-red-700 p-3 rounded-full flex justify-center items-center hover:bg-red-300 cursor-pointer"
-            onClick={handleMobileMenuBtn}
-          >
-            <MdClose size={28} />
           </div>
         </div>
       </div>
