@@ -12,7 +12,7 @@ export default function ContactPage() {
       <h1 className="title text-center text-primary">Let's Get In Touch</h1>
       <div className="bg-light-primary items-center py-16 mt-8">
         <div className="container">
-          <div className="grid grid-cols-3 primary">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center md:items-start gap-8 md:gap-0">
             <div className="col-span-1 flex flex-col gap-2 justify-center items-center">
               <div className="flex items-center gap-2">
                 <span className="bg-primary p-2 text-white rounded-full">

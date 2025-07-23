@@ -147,7 +147,6 @@ export default function Navbar() {
           <li>
             <Link href="/contact-us">Contact us</Link>
           </li>
-          <ThemeSwitch />
         </ul>
 
         {/* Mobile Menu Toggle Button */}

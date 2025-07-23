@@ -51,8 +51,12 @@ export default function FooterSection() {
             <div className="flex flex-col gap-2 my-4">
               <ul className="flex flex-col gap-2 text-sm">
                 <li className="hover:underline">Our Services</li>
-                <li className="hover:underline">About us</li>
-                <li className="hover:underline">Contact us</li>
+                <Link href="/about-us">
+                  <li className="hover:underline">About us</li>
+                </Link>
+                <Link href="/contact-us">
+                  <li className="hover:underline">Contact us</li>
+                </Link>
               </ul>
             </div>
           </div>
@@ -86,23 +90,23 @@ export default function FooterSection() {
                     Mechanical, Electrical, and Plumbing (MEP)
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="/aggfm-defaulters-management-and-recovery-services">
                   <li className="hover:underline">
                     Defaulters Management and Recovery Services
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="/security-guards-and-services">
                   <li className="hover:underline">Security Guard Services</li>
                 </Link>
-                <Link href="/">
+                <Link href="/inventory-fixed-assets-tagging-service">
                   <li className="hover:underline">
                     Inventory Fixed Assests Tagging Management Services
                   </li>
                 </Link>
-                <Link href="/">
+                <Link href="/agm-egm-services">
                   <li className="hover:underline">AGM/EGM Services</li>
                 </Link>
-                <Link href="/">
+                <Link href="/valet-parking">
                   <li className="hover:underline">Valet Parking Services</li>
                 </Link>
               </ul>
