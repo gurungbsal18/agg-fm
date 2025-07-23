@@ -7,6 +7,7 @@ import {
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowUp,
 } from "react-icons/md";
+import { ThemeSwitch } from "./theme-switch";
 
 const ServiceMenuList = [
   { id: 1, title: "Building Maintenance", link: "/building-maintenance" },
@@ -146,6 +147,7 @@ export default function Navbar() {
           <li>
             <Link href="/contact-us">Contact us</Link>
           </li>
+          <ThemeSwitch />
         </ul>
 
         {/* Mobile Menu Toggle Button */}
