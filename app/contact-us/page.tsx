@@ -49,6 +49,16 @@ export default function ContactPage() {
 
       <div className="container">
         <ContactForm />
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.00226890945135!2d101.6730226495987!3d3.0898259999999973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4b4087c1e0e3%3A0x5a02f4dc27e411fc!2sMegan%20Legasi%20%E2%80%A2%20Millerz%20Square%20%E2%80%A2%20OKR!5e0!3m2!1sen!2snp!4v1753214153741!5m2!1sen!2snp"
+          width="600"
+          height="450"
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="w-full"
+        ></iframe>
       </div>
     </>
   );
