@@ -62,7 +62,7 @@ const serviceData: serviceDataProps[] = [
     id: 7,
     title: "Defaulters Management and Recovery Services",
     icon: TbDatabaseStar,
-    link: "/",
+    link: "/defaulters-management-and-recovery-services",
   },
   {
     id: 8,
