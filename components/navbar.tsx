@@ -25,7 +25,7 @@ const ServiceMenuList = [
   {
     id: 6,
     title: "Mechanical, Electrical, and Plumbing (MEP)",
-    link: "mep-services",
+    link: "/mep-services",
   },
   {
     id: 7,
@@ -123,20 +123,25 @@ export default function Navbar() {
             >
               <ul className="flex flex-col py-2 bg-light-primary service-menu-dropdown">
                 {ServiceMenuList.map((list) => (
-                  <Link
-                    key={list.id}
-                    href={list.link}
-                    onClick={() => setServiceMenuOpen(false)}
-                  >
-                    <li className="px-4 py-2">{list.title}</li>
-                  </Link>
+                  <li key={list.id} className="px-4 py-2">
+                    <Link
+                      href={list.link}
+                      onClick={() => setServiceMenuOpen(false)}
+                    >
+                      {list.title}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>
           </li>
 
-          <li>About us</li>
-          <li>Contact us</li>
+          <li>
+            <Link href="#">About us</Link>
+          </li>
+          <li>
+            <Link href="#">Contact us</Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Toggle Button */}
@@ -154,13 +159,74 @@ export default function Navbar() {
         <div className="flex flex-col h-full justify-between p-6">
           <div>
             <ul className="space-y-4 text-lg">
-              <li>Home</li>
-              <li>Our Services</li>
-              <li>About us</li>
-              <li>Contact us</li>
+              <li>
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="relative">
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={handleServiceMenuDropdown}
+                >
+                  Our Services
+                  {serviceMenuOpen ? (
+                    <MdOutlineKeyboardArrowUp />
+                  ) : (
+                    <MdOutlineKeyboardArrowDown />
+                  )}
+                </div>
+                <div
+                  className={`transition-all duration-300 overflow-hidden bg-light-primary shadow-md rounded ${
+                    serviceMenuOpen
+                      ? "max-h-[500px] opacity-100 pointer-events-auto mt-2"
+                      : "max-h-0 opacity-0 pointer-events-none"
+                  }`}
+                >
+                  <ul>
+                    {ServiceMenuList.map((list) => (
+                      <li key={list.id} className="px-4 py-2">
+                        <Link
+                          href={list.link}
+                          onClick={() => {
+                            setServiceMenuOpen(false);
+                            setIsOpen(true);
+                          }}
+                        >
+                          {list.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                >
+                  About us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  onClick={() => {
+                    setIsOpen(true);
+                  }}
+                >
+                  Contact us
+                </Link>
+              </li>
             </ul>
           </div>
-
           <div
             className="bg-red-200 text-red-700 p-3 rounded-full flex justify-center items-center hover:bg-red-300 cursor-pointer"
             onClick={handleMobileMenuBtn}
