@@ -141,7 +141,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link href="#">About us</Link>
+            <Link href="/about-us">About us</Link>
           </li>
           <li>
             <Link href="#">Contact us</Link>
@@ -219,7 +219,7 @@ export default function Navbar() {
               </li>
               <li className="font-bold text-primary">
                 <Link
-                  href="#"
+                  href="/about-us"
                   onClick={() => {
                     setIsOpen(true);
                   }}
