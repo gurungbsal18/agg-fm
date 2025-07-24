@@ -45,7 +45,7 @@ const ConvenienceAndLifestyleServicesData: ServiceData[] = [
   {
     id: 1,
     title: "Convenience and Lifestyle Services",
-    image: "/images/delivery.webp",
+    image: "/images/concierge-1.webp",
     detail: [
       { id: 1, content: "Recieve and manage deliveries and packages" },
       { id: 2, content: "Handle dry cleaning drop-off and pick-up" },

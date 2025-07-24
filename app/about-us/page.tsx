@@ -5,7 +5,7 @@ import React from "react";
 export default function AboutUsPage() {
   return (
     <>
-      <PageHeader title="About us" image="/images/construction-work.webp" />
+      <PageHeader title="About us" image="/images/office-tower.webp" />
       <div className="container">
         <div className="content">
           <p>

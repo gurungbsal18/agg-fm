@@ -14,6 +14,12 @@ const teamData = [
     name: "Priya Mukiah",
     position: "CEO",
   },
+  {
+    id: 3,
+    image: "/images/team/vicnesh.webp",
+    name: "Vicnesh Muthukrishna",
+    position: "HR and Administration Director",
+  },
 ];
 
 export default function OurTeam() {
@@ -26,10 +32,13 @@ export default function OurTeam() {
         </p>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
         {teamData.map((list) => {
           return (
-            <div key={list.id} className="team-card hover:shadow-2xl">
+            <div
+              key={list.id}
+              className="col-span-1 team-card hover:shadow-2xl"
+            >
               <Image
                 src={list.image}
                 alt={list.name}

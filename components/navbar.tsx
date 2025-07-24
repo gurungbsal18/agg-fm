@@ -181,7 +181,7 @@ export default function Navbar() {
           isOpen ? "translate-x-full" : "translate-x-0"
         }`}
       >
-        <div className="flex flex-col h-full justify-between p-4">
+        <div className="flex flex-col h-full justify-between p-4 mobile-nav">
           <div>
             <ul className="space-y-4 text-sm">
               <li className="font-bold text-primary">
