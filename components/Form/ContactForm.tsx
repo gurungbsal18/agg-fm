@@ -1,9 +1,7 @@
+"use client";
 import React from "react";
-import Form from "next/form";
-import { Input } from "../ui/input";
 import { Button } from "@heroui/button";
-import { Label } from "../ui/label";
-import { Textarea } from "../ui/textarea";
+import { Form, Input, Textarea } from "@heroui/react";
 
 export default function ContactForm() {
   return (
@@ -12,27 +10,42 @@ export default function ContactForm() {
       <Form action="/search" className="flex flex-col gap-8">
         <div className="flex gap-8 w-full">
           <span className="flex flex-col gap-2 w-full">
-            <Label htmlFor="name">Full Name</Label>
-            <Input type="text" placeholder="First name" />
+            <Input
+              type="text"
+              isRequired
+              label="First name"
+              labelPlacement="inside"
+            />
           </span>
           <span className="flex flex-col gap-2 w-full">
-            <Label htmlFor="email">Email</Label>
-            <Input type="email" placeholder="Last name" />
+            <Input
+              type="email"
+              isRequired
+              label="Last name"
+              labelPlacement="inside"
+            />
           </span>
         </div>
         <div className="flex gap-8 w-full">
           <span className="flex flex-col gap-2 w-full">
-            <Label htmlFor="address">Address</Label>
-            <Input type="text" placeholder="Address" />
+            <Input
+              type="text"
+              isRequired
+              label="Address"
+              labelPlacement="inside"
+            />
           </span>
           <span className="flex flex-col gap-2 w-full">
-            <Label htmlFor="phone">Phone/WhatsApp Number</Label>
-            <Input type="phone" placeholder="Phone/WhatsApp Number" />
+            <Input
+              type="phone"
+              isRequired
+              label="Phone/WhatsApp Number"
+              labelPlacement="inside"
+            />
           </span>
         </div>
         <div className="flex flex-col gap-2 w-full">
-          <Label htmlFor="message">Message</Label>
-          <Textarea />
+          <Textarea label="Message" labelPlacement="inside" />
         </div>
         <div className="flex justify-start">
           <Button variant="solid" color="primary" radius="sm">
