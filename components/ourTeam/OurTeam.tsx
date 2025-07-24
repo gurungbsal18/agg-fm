@@ -28,7 +28,7 @@ export default function OurTeam() {
       <div className="flex flex-col justify-center items-center gap-2">
         <h4 className="content-title">Meet Our Team</h4>
         <p className="text-gray-500 text-center">
-          "The People Powering Malaysia Leading Facilities Soutions"
+          "The People Powering AGG Facilities Management PLT"
         </p>
       </div>
 
