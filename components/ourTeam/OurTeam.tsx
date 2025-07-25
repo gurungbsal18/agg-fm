@@ -71,7 +71,7 @@ export default function OurTeam() {
   }, [openModalData]);
 
   return (
-    <div className="my-24 py-32">
+    <div className="my-24">
       <div className="flex flex-col justify-center items-center gap-2">
         <h4 className="content-title">Meet Our Team</h4>
         <p className="text-gray-500 text-center">
@@ -99,6 +99,7 @@ export default function OurTeam() {
               <Button
                 className="w-full mt-2"
                 radius="sm"
+                color="primary"
                 onPress={() => setOpenModalData(member)}
               >
                 View Detail
