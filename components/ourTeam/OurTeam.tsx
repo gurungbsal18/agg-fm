@@ -16,6 +16,12 @@ const teamData = [
   },
   {
     id: 3,
+    image: "/images/team/vincenzo.webp",
+    name: "Vincenzo Ricci",
+    position: "Chief Operating Officer",
+  },
+  {
+    id: 4,
     image: "/images/team/vicnesh.webp",
     name: "Vicnesh Muthukrishna",
     position: "HR and Administration Director",
@@ -32,7 +38,7 @@ export default function OurTeam() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
         {teamData.map((list) => {
           return (
             <div

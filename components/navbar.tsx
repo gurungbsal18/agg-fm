@@ -13,38 +13,39 @@ const ServiceMenuList = [
   { id: 1, title: "Building Maintenance", link: "/building-maintenance" },
   { id: 2, title: "Concierge Services", link: "/concierge-services" },
   { id: 3, title: "Cleaning Professionals", link: "/cleaning-professionals" },
+  { id: 34, title: "Cleaning Services", link: "/cleaning-services" },
   {
-    id: 4,
+    id: 5,
     title: "Swimming Pool and Maintenance Services",
     link: "/swimming-pool-and-maintenance-services",
   },
   {
-    id: 5,
+    id: 6,
     title: "Landscape Maintenance Services",
     link: "/landscape-maintenance-services",
   },
   {
-    id: 6,
+    id: 7,
     title: "Mechanical, Electrical, and Plumbing (MEP)",
     link: "/mep-services",
   },
   {
-    id: 7,
+    id: 8,
     title: "Defaulters Management and Recovery Services",
     link: "/aggfm-defaulters-management-and-recovery-services",
   },
   {
-    id: 8,
+    id: 9,
     title: "Security Guard Services",
     link: "/security-guards-and-services",
   },
   {
-    id: 9,
+    id: 10,
     title: "Inventory Fixed Assets Tagging Services",
     link: "/inventory-fixed-assets-tagging-service",
   },
-  { id: 10, title: "AGM/EGM Services", link: "/agm-egm-services" },
-  { id: 11, title: "Valet Parking", link: "valet-parking" },
+  { id: 11, title: "AGM/EGM Services", link: "/agm-egm-services" },
+  { id: 12, title: "Valet Parking", link: "valet-parking" },
 ];
 
 export default function Navbar() {
