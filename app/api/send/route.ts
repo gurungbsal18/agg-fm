@@ -11,7 +11,7 @@ export async function POST(req: Request) {
   try {
     const { data, error } = await resend.emails.send({
       from: "AGGFM Contact Form <onboarding@resend.dev>",
-      to: ["gurungbsal18@gmail.com"],
+      to: ["gurungbsal18@gmail.com", "priyaa.welsh@gmail.com"],
       subject: "You have recieved new message from contact page",
       react: EmailTemplate({
         firstName: body.firstName || "empty",
