@@ -27,12 +27,12 @@ export default function TopBar() {
       link: "https://facebook.com",
     },
     {
-      id: 1,
+      id: 2,
       icon: BsInstagram,
       link: "https://instagram.com",
     },
     {
-      id: 1,
+      id: 3,
       icon: FaLinkedinIn,
       link: "https://linkedin.com",
     },
