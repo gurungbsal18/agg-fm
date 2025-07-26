@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function AboutAAboutAGGSection() {
   return (
-    <div className="container home-about-agg-section">
+    <div className="container home-about-agg-section animation-block">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="col-span-1">
           <SectionTitle title="About AGG Facilities Management PLT" />

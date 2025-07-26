@@ -98,7 +98,7 @@ const serviceData: serviceDataProps[] = [
 
 export default function AggFacilitiesSection() {
   return (
-    <div className="container">
+    <div className="container animation-block">
       <div className="flex flex-col md:flex-row justify-between">
         <SectionTitle title="AGG Facilities Management PLT Services" />
         <Button color="primary" radius="sm">

@@ -1,0 +1,33 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5); /* use 'transform' instead of 'scale' directly */
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animation-block {
+  view-timeline-name: --appear;
+  view-timeline-axis: block;
+
+  animation-name: appear;
+  animation-duration: 1s; /* Add a duration */
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-timeline: --appear;
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes hero {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Move from top */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
