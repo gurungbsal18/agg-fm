@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 import { MdOutlineMenu, MdClose } from "react-icons/md";
 import {
   MdOutlineKeyboardArrowDown,
@@ -45,13 +46,14 @@ const ServiceMenuList = [
     link: "/inventory-fixed-assets-tagging-service",
   },
   { id: 11, title: "AGM/EGM Services", link: "/agm-egm-services" },
-  { id: 12, title: "Valet Parking", link: "valet-parking" },
+  { id: 12, title: "Valet Parking", link: "/valet-parking" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   const serviceMenuRef = useRef<HTMLLIElement>(null);
+  const pathname = usePathname();
 
   const handleMobileMenuBtn = () => {
     setIsOpen(!isOpen);
@@ -61,7 +63,6 @@ export default function Navbar() {
     setServiceMenuOpen(!serviceMenuOpen);
   };
 
-  // Close service dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -78,13 +79,16 @@ export default function Navbar() {
     };
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = isOpen ? "auto" : "hidden";
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
+  const isServicePath = ServiceMenuList.some((item) =>
+    pathname.startsWith(item.link)
+  );
 
   return (
     <div>
@@ -101,11 +105,14 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="nav-item hidden md:flex md:gap-4 md:items-center">
-          <Link href="/">
-            <li>Home</li>
-          </Link>
+          <li className={pathname === "/" ? "text-primary" : ""}>
+            <Link href="/">Home</Link>
+          </li>
+
           <li
-            className="service-menu relative hover:cursor-pointer"
+            className={`service-menu relative hover:cursor-pointer ${
+              isServicePath ? "text-primary" : ""
+            }`}
             ref={serviceMenuRef}
           >
             <p
@@ -133,6 +140,7 @@ export default function Navbar() {
                     <Link
                       href={list.link}
                       onClick={() => setServiceMenuOpen(false)}
+                      className={pathname === list.link ? "text-primary" : ""}
                     >
                       {list.title}
                     </Link>
@@ -142,10 +150,10 @@ export default function Navbar() {
             </div>
           </li>
 
-          <li>
+          <li className={pathname === "/about-us" ? "text-primary" : ""}>
             <Link href="/about-us">About us</Link>
           </li>
-          <li>
+          <li className={pathname === "/contact-us" ? "text-primary" : ""}>
             <Link href="/contact-us">Contact us</Link>
           </li>
         </ul>
@@ -185,13 +193,12 @@ export default function Navbar() {
         <div className="flex flex-col h-full justify-between p-4 mobile-nav">
           <div>
             <ul className="space-y-4 text-sm">
-              <li className="font-bold text-primary">
-                <Link
-                  href="/"
-                  onClick={() => {
-                    setIsOpen(true);
-                  }}
-                >
+              <li
+                className={`font-bold ${
+                  pathname === "/" ? "text-primary" : "text-primary/60"
+                }`}
+              >
+                <Link href="/" onClick={() => setIsOpen(true)}>
                   Home
                 </Link>
               </li>
@@ -201,41 +208,44 @@ export default function Navbar() {
                 </div>
                 <div>
                   <ul className="bg-light-primary">
-                    {ServiceMenuList.map((list) => {
-                      return (
-                        <li key={list.id} className="px-4 py-2">
-                          <Link
-                            href={list.link}
-                            onClick={() => {
-                              setServiceMenuOpen(false);
-                              setIsOpen(true);
-                            }}
-                          >
-                            {list.title}
-                          </Link>
-                        </li>
-                      );
-                    })}
+                    {ServiceMenuList.map((list) => (
+                      <li
+                        key={list.id}
+                        className={`px-4 py-2 ${
+                          pathname === list.link ? "text-primary" : ""
+                        }`}
+                      >
+                        <Link
+                          href={list.link}
+                          onClick={() => {
+                            setServiceMenuOpen(false);
+                            setIsOpen(true);
+                          }}
+                        >
+                          {list.title}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </li>
-              <li className="font-bold text-primary">
-                <Link
-                  href="/about-us"
-                  onClick={() => {
-                    setIsOpen(true);
-                  }}
-                >
+              <li
+                className={`font-bold ${
+                  pathname === "/about-us" ? "text-primary" : "text-primary/60"
+                }`}
+              >
+                <Link href="/about-us" onClick={() => setIsOpen(true)}>
                   About us
                 </Link>
               </li>
-              <li className="font-bold text-primary">
-                <Link
-                  href="/contact-us"
-                  onClick={() => {
-                    setIsOpen(true);
-                  }}
-                >
+              <li
+                className={`font-bold ${
+                  pathname === "/contact-us"
+                    ? "text-primary"
+                    : "text-primary/60"
+                }`}
+              >
+                <Link href="/contact-us" onClick={() => setIsOpen(true)}>
                   Contact us
                 </Link>
               </li>
