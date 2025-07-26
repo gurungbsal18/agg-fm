@@ -10,6 +10,7 @@ import { fontSans } from "@/config/fonts";
 import Navbar from "@/components/navbar";
 import TopBar from "@/components/topbar";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget/WhatsAppWidget";
 
 export const metadata: Metadata = {
   title: {
@@ -50,6 +51,7 @@ export default function RootLayout({
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
+          <WhatsAppWidget />
         </Providers>
       </body>
     </html>
