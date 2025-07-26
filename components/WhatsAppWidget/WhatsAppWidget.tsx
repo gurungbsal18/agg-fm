@@ -7,7 +7,7 @@ function WhatsAppWidget() {
       phoneNumber="+60128907763"
       accountName="AGG FM"
       avatar="/aggfm-logo.svg"
-      statusMessage="Piya Mukiah"
+      statusMessage="Priyaa Mukiah"
       chatMessage="Hi, how can I help you?"
       placeholder="Type your message here ...."
       darkMode={true}

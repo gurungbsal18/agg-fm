@@ -25,7 +25,7 @@ const teamData: TeamMember[] = [
   {
     id: 2,
     image: "/aggfm-logo.svg",
-    name: "Priya Mukiah",
+    name: "Priyaa Mukiah",
     position: "CEO",
     detail:
       "An entrepreneurial scaler’ persona - the sweetspot of a certain  personality type, as her role is unique, working as a diamond in the rough. As the CEO, she makes final decisions on company strategy and other business goals.",
