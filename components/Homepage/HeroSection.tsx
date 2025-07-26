@@ -3,7 +3,8 @@ import { Button } from "@heroui/button";
 import { LuSearch, LuMail } from "react-icons/lu";
 
 export default function HeroSection() {
-  const title = "AGG FACILITIES MANAGEMENT PLT AS AN";
+  const title =
+    "AGG Facilities Management PLT As An Integrated Facilities Management For The Future";
 
   return (
     <div className="hero">

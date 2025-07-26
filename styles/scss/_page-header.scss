@@ -5,16 +5,16 @@
   height: 550px;
   display: flex;
   align-items: center;
-  // &::before {
-  //   content: "";
-  //   background: #00000071;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   height: 100%;
-  //   width: 100%;
-  //   z-index: 1;
-  // }
+  &::before {
+    content: "";
+    background-color: #00000034;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
   &::after {
     content: "";
     background-image: url("/images/hero-banner.svg");
