@@ -10,7 +10,7 @@ export default function LandscapeMaintenanceServices() {
       />
 
       <div className="container animation-block">
-        <h4 className="content-title hero-title-animation">
+        <h4 className="content-title">
           AGGFM's Landscape Maintenance Services
         </h4>
         <div className="content">
