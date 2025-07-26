@@ -3,6 +3,7 @@
 import { Button } from "@heroui/button";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
+import { IoClose } from "react-icons/io5";
 
 interface TeamMember {
   id: number;
@@ -120,9 +121,9 @@ export default function OurTeam() {
           >
             <button
               onClick={() => setOpenModalData(null)}
-              className="absolute top-3 right-4 text-xl font-bold text-gray-600 hover:text-black"
+              className="absolute top-3 right-4 text-xl font-bold text-gray-600 hover:text-black hover:cursor-pointer"
             >
-              ×
+              <IoClose size={24} />
             </button>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="col-span-1">
