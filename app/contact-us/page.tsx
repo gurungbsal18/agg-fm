@@ -9,7 +9,9 @@ import ContactForm from "@/components/Form/ContactForm";
 export default function ContactPage() {
   return (
     <>
-      <h1 className="title text-center text-primary">Let's Get In Touch</h1>
+      <div className="w-full flex justify-center">
+        <h1 className="title text-center text-primary">Let's Get In Touch</h1>
+      </div>
       <div className="bg-light-primary items-center py-16 mt-8">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 items-center md:items-start gap-8 md:gap-0">

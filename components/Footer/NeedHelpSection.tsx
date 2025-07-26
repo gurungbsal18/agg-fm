@@ -6,36 +6,45 @@ import { LuMail } from "react-icons/lu";
 
 export default function NeedHelpSection() {
   return (
-    <div className="container need-help-section">
-      <div className="bg-primary rounded-2xl flex flex-col items-center justify-center gap-8 px-4 py-16">
-        <h4 className="text-4xl font-bold text-white">Need Help?</h4>
-        <div className="text-center">
-          <p className="text-white">
-            If you have any questions or need assistance, free to contact us.
+    <div className="container need-help-section bg-primary rounded-2xl">
+      <div className="flex flex-col items-center justify-center gap-8 px-4 py-16 text-white text-center need-help-section-content">
+        <h4 className="text-4xl font-bold">Need Help?</h4>
+
+        <div>
+          <p>
+            If you have any questions or need assistance, feel free to contact
+            us.
           </p>
-          <p className="text-white">We are here to help!</p>
+          <p>We are here to help!</p>
         </div>
 
-        <div className="w-full flex justify-center gap-4">
-          <Link href="https://wa.me/+60128907763" target="_blank">
-            <Button radius="sm" className="flex items-center gap-1">
-              <BsWhatsapp className="text-green-700" size={20} />
+        <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a
+            href="https://wa.me/60128907763"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button radius="sm" className="flex items-center gap-2">
+              <BsWhatsapp className="text-green-600" size={20} />
               WhatsApp
             </Button>
-          </Link>
-          <Link href="mailto:contact@aggsfm.com">
-            {" "}
-            <Button radius="sm" className="flex items-center gap-1">
+          </a>
+          <Link href="/contact-us">
+            <Button radius="sm" className="flex items-center gap-2">
               <LuMail size={20} />
               Contact Us
             </Button>
           </Link>
         </div>
-        <p className="text-white">
+
+        <p>
           or email us at:{" "}
-          <Link href="mailto:contact@aggsfm.com" className="underline">
+          <a
+            href="mailto:contact@aggsfm.com"
+            className="underline underline-offset-2"
+          >
             contact@aggsfm.com
-          </Link>
+          </a>
         </p>
       </div>
     </div>

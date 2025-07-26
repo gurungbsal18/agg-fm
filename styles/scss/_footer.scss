@@ -18,6 +18,7 @@
 
 .need-help-section {
   position: relative;
+
   &::after {
     content: "";
     background: url("/images/malaysia-map.png") no-repeat center center;
@@ -29,6 +30,11 @@
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    z-index: 1;
+  }
+  &-content {
+    position: relative;
+    z-index: 2;
   }
 }
 
