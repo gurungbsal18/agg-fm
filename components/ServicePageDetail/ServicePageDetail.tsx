@@ -412,7 +412,7 @@ export default function ServicePageDetail() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="col-span-1 md:col-span-4">
           <Image
-            src="/images/building-1.webp"
+            src="/images/office-tower-1.webp"
             alt="building maintenance"
             width={1920}
             height={1080}
