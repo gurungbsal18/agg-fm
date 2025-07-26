@@ -37,14 +37,13 @@ const teamData: TeamMember[] = [
     detail:
       "Manages AGG Facilities Management's day-to-day operations. He ensures the efficient and effective functioning of all departments, aligning operations with the company's overall strategy and goals. His role is crucial for optimizing productivity, streamlining processes, and achieving profitability.",
   },
-
   {
     id: 4,
     image: "/images/team/reuben-edit.webp",
     name: "Reuben Semeyon",
     position: "Director of Asset Management",
     detail:
-      "brings a strong background in real estate operations and facilities management. With proven experience in managing both residential and commercial properties, he plays a key role in ensuring that all properties under our care are well-maintained, financially sound, and fully compliant with regulatory and safety standards.",
+      "Brings a strong background in real estate operations and facilities management. With proven experience in managing both residential and commercial properties, he plays a key role in ensuring that all properties under our care are well-maintained, financially sound, and fully compliant with regulatory and safety standards.",
   },
   {
     id: 5,
@@ -58,17 +57,18 @@ const teamData: TeamMember[] = [
 
 export default function OurTeam() {
   const [openModalData, setOpenModalData] = useState<TeamMember | null>(null);
+  const [animateModal, setAnimateModal] = useState(false);
 
-  // Lock body scroll when modal is open
+  // Animate on modal open
   useEffect(() => {
     if (openModalData) {
+      setAnimateModal(false);
+      const timeout = setTimeout(() => setAnimateModal(true), 50);
       document.body.style.overflow = "hidden";
+      return () => clearTimeout(timeout);
     } else {
       document.body.style.overflow = "";
     }
-    return () => {
-      document.body.style.overflow = "";
-    };
   }, [openModalData]);
 
   return (
@@ -112,8 +112,12 @@ export default function OurTeam() {
 
       {/* Modal */}
       {openModalData && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 transition-all">
-          <div className="bg-white rounded-xl p-6 max-w-2xl w-full relative shadow-lg">
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 modal-backdrop">
+          <div
+            className={`bg-white rounded-xl p-6 max-w-2xl w-full relative shadow-lg transition-all ${
+              animateModal ? "modal-open-animation animate" : ""
+            }`}
+          >
             <button
               onClick={() => setOpenModalData(null)}
               className="absolute top-3 right-4 text-xl font-bold text-gray-600 hover:text-black"
