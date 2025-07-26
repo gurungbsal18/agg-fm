@@ -3,9 +3,15 @@ import { Button } from "@heroui/button";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
+type innerContentProps = {
+  id: number;
+  title: string;
+};
+
 type detailProps = {
   id: number;
   content: string;
+  innerContent?: innerContentProps[];
 };
 
 type cleaningProfessionalsDataProps = {
@@ -79,19 +85,40 @@ const keyCleanData: cleaningProfessionalsDataProps[] = [
     detail: [
       {
         id: 1,
-        content: "Car parks & communal spaces",
+        content: "Residential Condominium",
       },
       {
         id: 2,
-        content: "Windows, glass, & facades",
+        content: "Post Construction Cleaning : Types of Construction Cleaning",
+        innerContent: [
+          {
+            id: 1,
+            title:
+              "Rough clean- Removing large debris and construction residue",
+          },
+          {
+            id: 2,
+            title:
+              "Final clean (or sparkle clean) -A more detailed cleaning, ensuring a spotless finish",
+          },
+        ],
       },
       {
         id: 3,
-        content: "Walkways, stairwells, & steps",
+        content: "Airport Cleaning",
       },
       {
         id: 4,
-        content: "Garbage bin management Residential & commercial buildings",
+        content: "Airport/Terminal Cleaning",
+      },
+      {
+        id: 5,
+        content: "Educational Institution Cleaning",
+      },
+      {
+        id: 6,
+        content:
+          "Emcompasses a broader range of cleaning for manufacturer's premise, mall, commercial settings, industrial and retail premises",
       },
     ],
   },
@@ -131,6 +158,13 @@ export default function CleaningProfessionalsTabView() {
             {list.detail.map((item) => (
               <li key={item.id} className="list-decimal ms-4">
                 {item.content}
+                {item.innerContent && (
+                  <ul className="list-disc ms-8">
+                    {item.innerContent.map((inner) => (
+                      <li key={inner.id}>{inner.title}</li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
