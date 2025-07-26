@@ -15,7 +15,7 @@ export default function PageHeader({ title, image }: PageHeaderProps) {
         width={1920}
         height={1080}
       />
-      <div className="container page-header-content">
+      <div className="container flex justify-center page-header-content">
         <h1 className="title">{title}</h1>
       </div>
     </div>
