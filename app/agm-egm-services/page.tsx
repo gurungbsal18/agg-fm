@@ -4,7 +4,7 @@ import React from "react";
 export default function AgmEgmServicesPage() {
   return (
     <div>
-      <PageHeader title="AGM/EGM Services" />
+      <PageHeader title="AGM/EGM Services" image="/images/night.webp" />
       <div className="container">
         <h4 className="content-title">AGM/EGM Services</h4>
         <div className="content">

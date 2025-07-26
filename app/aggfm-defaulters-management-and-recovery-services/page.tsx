@@ -5,7 +5,10 @@ import React from "react";
 export default function DefaultersManagementpage() {
   return (
     <div>
-      <PageHeader title="AGGFM's Defaulters Management and Recovery Services" />
+      <PageHeader
+        title="AGGFM's Defaulters Management and Recovery Services"
+        image="/images/building-1.webp"
+      />
       <div className="container">
         <h4 className="content-title">
           AGGFM's Defaulters Management and Recover Services
@@ -47,14 +50,14 @@ export default function DefaultersManagementpage() {
         </div>
       </div>
 
-      <div className="page-banner">
+      {/* <div className="page-banner">
         <Image
           src="/images/malaysia-night.webp"
           alt="malaysia night"
           width={1920}
           height={1080}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

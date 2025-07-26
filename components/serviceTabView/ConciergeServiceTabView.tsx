@@ -28,7 +28,7 @@ const SecurityAndAccessControlData: ServiceData[] = [
   {
     id: 1,
     title: "Security and Access Control",
-    image: "/images/building-safety.webp",
+    image: "/images/building.webp",
     detail: [
       { id: 1, content: "Restrict access to unauthorized individuals" },
       { id: 2, content: "Maintain the Daily Occurence Book (DOB)" },

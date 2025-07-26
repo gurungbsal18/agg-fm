@@ -1,8 +1,17 @@
+import Image from "next/image";
 import React from "react";
 
 export default function AirportCleaningService() {
   return (
     <>
+      <Image
+        src="/images/airport.webp"
+        height={1080}
+        width={1920}
+        alt="airport"
+        className="rounded-2xl shadow-2xl mr-8 mb-4 inner-page-image"
+      />
+      <h4 className="content-title">Airport Cleaning</h4>
       <div className="content">
         <p>
           Airport cleaning services encompass a wide range of tasks aimed at

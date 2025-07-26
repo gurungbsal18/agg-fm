@@ -6,7 +6,7 @@ export default function BuildingMaintenancePage() {
     <div>
       <PageHeader
         title="Building Maintenance"
-        image="/images/building-maintenance.webp"
+        image="/images/building-maintenance-2.webp"
       />
 
       <div className="container">

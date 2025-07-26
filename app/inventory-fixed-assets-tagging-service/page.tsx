@@ -4,7 +4,10 @@ import React from "react";
 export default function InventoryFixedAssetsTaggingServicePage() {
   return (
     <div>
-      <PageHeader title="Inventory Fixed Assets Tagging Service" />
+      <PageHeader
+        title="Inventory Fixed Assets Tagging Service"
+        image="/images/malaysia.webp"
+      />
       <div className="container">
         <h4 className="content-title">
           Inventory Fixed Assets Tagging Service

@@ -7,7 +7,7 @@ export default function LandscapeMaintenanceServices() {
     <div>
       <PageHeader
         title="Landscape Maintenance Services"
-        image="/images/landscape-2.webp"
+        image="/images/garden.webp"
       />
 
       <div className="container">
@@ -105,14 +105,14 @@ export default function LandscapeMaintenanceServices() {
         </div>
       </div>
 
-      <div className="page-banner">
+      {/* <div className="page-banner">
         <Image
           src="/images/landscape-1.webp"
           alt="lawn care"
           width={1920}
           height={1080}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

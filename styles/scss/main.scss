@@ -11,6 +11,10 @@
   font-optical-sizing: auto;
   font-size: 64px;
   font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.719);
+  width: fit-content;
+  padding: 4px 24px;
+  border-radius: 16px;
   @media (max-width: 576px) {
     font-size: 36px;
     text-align: center;
