@@ -9,7 +9,7 @@ export default function BuildingMaintenancePage() {
         image="/images/building-maintenance-2.webp"
       />
 
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">Building Maintenance</h4>
         <div className="content">
           <p>
