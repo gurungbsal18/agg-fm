@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Button } from "@heroui/button";
 import { Form, Input, Textarea } from "@heroui/react";
+import sendEmail from "./utils/EmailUtils";
 
 export default function ContactForm() {
   const initialFormData = {
@@ -23,25 +24,10 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!formData.firstName || !formData.lastName || !formData.phone) return;
-
-    try {
-      const response = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-      console.log("Email send successfully!", result);
-    } catch (error) {
-      console.log("unable to send message", error);
-    }
+    sendEmail(formData);
   };
 
-  console.log(formData);
+  // console.log(formData);
 
   return (
     <div className="my-8">

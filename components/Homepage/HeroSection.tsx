@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { Button } from "@heroui/button";
 import { LuSearch, LuMail } from "react-icons/lu";
+import Link from "next/link";
 
 export default function HeroSection() {
   const titleRef = useRef(null);
@@ -44,12 +45,16 @@ export default function HeroSection() {
             For The Future
           </h1>
           <div className="flex items-start justify-center gap-4 w-full">
-            <Button radius="sm" variant="shadow" color="primary">
-              <LuSearch /> Explore Services
-            </Button>
-            <Button radius="sm">
-              <LuMail /> Contact Us
-            </Button>
+            <Link href="/">
+              <Button radius="sm" variant="shadow" color="primary">
+                <LuSearch /> Explore Services
+              </Button>
+            </Link>
+            <Link href="/contact-us">
+              <Button radius="sm">
+                <LuMail /> Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
