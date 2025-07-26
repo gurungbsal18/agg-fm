@@ -17,7 +17,7 @@ export default function CleaningServiceTabView() {
 
   return (
     <>
-      <div className="mb-4 flex flex-row gap-4 items-center">
+      <div className="mb-4 flex flex-col md:flex-row gap-4 items-center">
         <Button
           color="primary"
           variant={activeTab === "airport" ? "solid" : "flat"}

@@ -34,7 +34,7 @@ export default function PageHeader({ title, image }: PageHeaderProps) {
     };
   }, []);
   return (
-    <div className="page-header mb-24">
+    <div className="page-header mb-12 md:mb-24">
       <Image
         src={image || "/images/malaysia-home-banner.webp"}
         alt={title}

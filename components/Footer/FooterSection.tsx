@@ -141,7 +141,7 @@ export default function FooterSection() {
               width={1080}
             />
           </div>
-          <p className="font-semibold">AGG Soft Facilities Management</p>
+          <p className="font-semibold">AGG Facilities Management</p>
           <div className="bg-white text-primary w-full md:w-1/4 flex flex-col gap-1 items-center justify-center rounded-lg md:rounded-full py-2">
             <p>Follow us</p>
             <div className="flex gap-2">

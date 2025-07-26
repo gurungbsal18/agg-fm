@@ -12,7 +12,7 @@ export default function InventoryFixedAssetsTaggingServicePage() {
         <h4 className="content-title">
           Inventory Fixed Assets Tagging Service
         </h4>
-        <div className="content animation-block">
+        <div className="content">
           <p>
             Inventory Asset tagging services involve the process of labeling
             physical assets with unique identifiers, such as barcodes, QR codes,
