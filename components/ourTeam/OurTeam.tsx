@@ -37,21 +37,22 @@ const teamData: TeamMember[] = [
     detail:
       "Manages AGG Facilities Management's day-to-day operations. He ensures the efficient and effective functioning of all departments, aligning operations with the company's overall strategy and goals. His role is crucial for optimizing productivity, streamlining processes, and achieving profitability.",
   },
+
   {
     id: 4,
-    image: "/images/team/vicnesh-edit.webp",
-    name: "Vicnesh Muthukrishna",
-    position: "HR and Administration Director",
-    detail:
-      "HR and Administration Director who bridges the gap between the company's strategic goals and its workforce, ensuring a productive and compliant work environment. His role combines the responsibilities of both as an HR Director and an Administrative Leader, focusing on people-related initiatives alongside operational efficiency.",
-  },
-  {
-    id: 5,
     image: "/images/team/reuben-edit.webp",
     name: "Reuben Semeyon",
     position: "Director of Asset Management",
     detail:
       "brings a strong background in real estate operations and facilities management. With proven experience in managing both residential and commercial properties, he plays a key role in ensuring that all properties under our care are well-maintained, financially sound, and fully compliant with regulatory and safety standards.",
+  },
+  {
+    id: 5,
+    image: "/images/team/vicnesh-edit.webp",
+    name: "Vicnesh Muthukrishna",
+    position: "HR and Administration Director",
+    detail:
+      "HR and Administration Director who bridges the gap between the company's strategic goals and its workforce, ensuring a productive and compliant work environment. His role combines the responsibilities of both as an HR Director and an Administrative Leader, focusing on people-related initiatives alongside operational efficiency.",
   },
 ];
 
