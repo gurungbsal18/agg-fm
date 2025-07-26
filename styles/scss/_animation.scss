@@ -21,13 +21,48 @@
   animation-range: entry 0% cover 40%;
 }
 
-@keyframes hero {
+@keyframes appear {
   from {
     opacity: 0;
-    transform: translateY(-50px); /* Move from top */
+    transform: scale(0.5); /* use 'transform' instead of 'scale' directly */
   }
   to {
     opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animation-block {
+  view-timeline-name: --appear;
+  view-timeline-axis: block;
+
+  animation-name: appear;
+  animation-duration: 1s; /* Add a duration */
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-timeline: --appear;
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
+}
+
+.hero-title-animation {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.hero-title-animation.animate {
+  animation: fadeInDown 0.8s ease-out forwards;
 }
