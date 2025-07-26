@@ -1,10 +1,9 @@
 "use client";
 import { Button } from "@heroui/button";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoShieldCheck } from "react-icons/go";
-import { HiOutlineHome } from "react-icons/hi2";
-import { HiUser } from "react-icons/hi2";
+import { HiOutlineHome, HiUser } from "react-icons/hi2";
 
 // -------------------------
 // ✅ Types
@@ -79,9 +78,22 @@ export default function ConciergeServiceTabView() {
     "security" | "convenience" | "personalised"
   >("security");
 
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(false);
+    const timeout = setTimeout(() => setAnimate(true), 50);
+    return () => clearTimeout(timeout);
+  }, [activeTab]);
+
   const renderTabData = (data: ServiceData[]) => {
     return data.map((list: ServiceData) => (
-      <div key={list.id} className="grid grid-1 md:grid-cols-12 gap-8 mt-8">
+      <div
+        key={list.id}
+        className={`grid grid-cols-1 md:grid-cols-12 gap-8 mt-8 ${
+          animate ? "hero-title-animation animate" : "hero-title-animation"
+        }`}
+      >
         <div className="col-span-12 md:col-span-4">
           <Image
             src={list.image}
@@ -111,7 +123,7 @@ export default function ConciergeServiceTabView() {
         <Button
           radius="sm"
           onPress={() => setActiveTab("security")}
-          color={activeTab === "security" ? "primary" : "primary"}
+          color="primary"
           variant={activeTab === "security" ? "solid" : "flat"}
         >
           <GoShieldCheck size={18} />
@@ -120,7 +132,7 @@ export default function ConciergeServiceTabView() {
         <Button
           radius="sm"
           onPress={() => setActiveTab("convenience")}
-          color={activeTab === "convenience" ? "primary" : "primary"}
+          color="primary"
           variant={activeTab === "convenience" ? "solid" : "flat"}
         >
           <HiOutlineHome size={18} />
@@ -129,7 +141,7 @@ export default function ConciergeServiceTabView() {
         <Button
           radius="sm"
           onPress={() => setActiveTab("personalised")}
-          color={activeTab === "personalised" ? "primary" : "primary"}
+          color="primary"
           variant={activeTab === "personalised" ? "solid" : "flat"}
         >
           <HiUser size={18} />

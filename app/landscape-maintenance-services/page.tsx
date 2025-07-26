@@ -1,5 +1,4 @@
 import PageHeader from "@/components/PageHeader";
-import Image from "next/image";
 import React from "react";
 
 export default function LandscapeMaintenanceServices() {
@@ -10,8 +9,8 @@ export default function LandscapeMaintenanceServices() {
         image="/images/garden.webp"
       />
 
-      <div className="container">
-        <h4 className="content-title">
+      <div className="container animation-block">
+        <h4 className="content-title hero-title-animation">
           AGGFM's Landscape Maintenance Services
         </h4>
         <div className="content">
@@ -27,7 +26,7 @@ export default function LandscapeMaintenanceServices() {
           <p>Detailed scope of work elements:</p>
         </div>
 
-        <h4 className="content-title">Lawn Care:</h4>
+        <h4 className="font-bold text-primary">Lawn Care:</h4>
         <div className="content">
           <p>
             Mowing, edging, weed control (manual and chemical), aeration,
@@ -35,7 +34,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Plant Health:</h4>
+        <h4 className="font-bold text-primary">Plant Health:</h4>
         <div className="content">
           <p>
             Pruning, trimming shrubs and trees, removing dead or diseased plant
@@ -44,7 +43,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Hardscape Maintenance:</h4>
+        <h4 className="font-bold text-primary">Hardscape Maintenance:</h4>
         <div className="content">
           <p>
             Maintaining walkways, driveways, patios, retaining walls, and other
@@ -52,7 +51,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Irrigation System:</h4>
+        <h4 className="font-bold text-primary">Irrigation System:</h4>
         <div className="content">
           <p>
             Checking for leaks, repairing or replacing irrigation heads, and
@@ -60,7 +59,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Debris Removal:</h4>
+        <h4 className="font-bold text-primary">Debris Removal:</h4>
         <div className="content">
           <p>
             Picking up fallen leaves, grass clippings, and other debris, as well
@@ -68,7 +67,9 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Fertilization and Soil Health:</h4>
+        <h4 className="font-bold text-primary">
+          Fertilization and Soil Health:
+        </h4>
         <div className="content">
           <p>
             Applying fertilizers to lawns and beds, testing soil pH, and adding
@@ -76,7 +77,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Pest and Disease Control:</h4>
+        <h4 className="font-bold text-primary">Pest and Disease Control:</h4>
         <div className="content">
           <p>
             Identifying and treating pest infestations and diseases in plants,
@@ -85,7 +86,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Mulching:</h4>
+        <h4 className="font-bold text-primary">Mulching:</h4>
         <div className="content">
           <p>
             Applying mulch to garden beds to suppress weeds, retain moisture,
@@ -93,9 +94,9 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="content-title">Other Services:</h4>
+        <h4 className="font-bold text-primary">Other Services:</h4>
         <div>
-          <ul>
+          <ul className="list-decimal ps-5">
             <li>Snow and ice removal</li>
             <li>Landscape lighting maintenance</li>
             <li>Water feature maintenance (ponds, fountains)</li>

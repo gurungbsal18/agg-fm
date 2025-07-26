@@ -1,5 +1,4 @@
 import PageHeader from "@/components/PageHeader";
-import Image from "next/image";
 import React from "react";
 
 export default function DefaultersManagementpage() {
@@ -9,7 +8,7 @@ export default function DefaultersManagementpage() {
         title="AGGFM's Defaulters Management and Recovery Services"
         image="/images/building-1.webp"
       />
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">
           AGGFM's Defaulters Management and Recover Services
         </h4>

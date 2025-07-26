@@ -10,8 +10,8 @@ export default function MechanicalElectricalPlumbingPage() {
         image="/images/mep-banner.webp"
       />
 
-      <div className="container">
-        <h4 className="content-title">
+      <div className="container animation-block">
+        <h4 className="font-bold text-primary">
           AGGFM's Mechanical, Electrical, and Plumbing (MEP)
         </h4>
         <div className="content">
@@ -25,7 +25,7 @@ export default function MechanicalElectricalPlumbingPage() {
           <p>Key Aspects of Building Electrical and Plumbing Services:</p>
         </div>
 
-        <h4 className="content-title">MEP Services:</h4>
+        <h4 className="font-bold text-primary">MEP Services:</h4>
         <div className="content">
           <p>
             This term encompasses all aspects of a building's infrastructure
@@ -34,7 +34,7 @@ export default function MechanicalElectricalPlumbingPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Functionality and Comfort:</h4>
+        <h4 className="font-bold text-primary">Functionality and Comfort:</h4>
         <div className="content">
           <p>
             These services ensure that buildings have the necessary utilities
@@ -43,7 +43,7 @@ export default function MechanicalElectricalPlumbingPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Safety and Compliance:</h4>
+        <h4 className="font-bold text-primary">Safety and Compliance:</h4>
         <div className="content">
           <p>
             MEP services are designed and installed to meet safety standards and
@@ -52,7 +52,7 @@ export default function MechanicalElectricalPlumbingPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Integration:</h4>
+        <h4 className="font-bold text-primary">Integration:</h4>
         <div className="content">
           <p>
             Proper integration of MEP systems is crucial for a building's
@@ -61,7 +61,7 @@ export default function MechanicalElectricalPlumbingPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Design and Installation:</h4>
+        <h4 className="font-bold text-primary">Design and Installation:</h4>
         <div className="content">
           <p>
             MEP systems are designed by specialized engineers and installed by
@@ -69,8 +69,10 @@ export default function MechanicalElectricalPlumbingPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Specific Services within MEP:</h4>
-        <ul>
+        <h4 className="font-bold text-primary">
+          Specific Services within MEP:
+        </h4>
+        <ul className="list-decimal ps-5">
           <li>
             <span className="font-bold">Electrical:</span>This includes wiring,
             power distribution, lighting, and control systems.

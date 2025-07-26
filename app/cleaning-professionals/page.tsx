@@ -9,7 +9,7 @@ export default function CleaningProfessionalsPage() {
         title="AGGFM's Cleaning Professionals"
         image="/images/cleaning-banner.webp"
       />
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">AGGFM's Cleaning Professionals</h4>
         <div className="content">
           <p>

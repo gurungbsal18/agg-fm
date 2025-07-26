@@ -9,7 +9,7 @@ export default function ValetParkingPage() {
         title="Valet Parking Services"
         image="/images/valet-parking.webp"
       />
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">Valet Parking</h4>
         <div className="content">
           <p>

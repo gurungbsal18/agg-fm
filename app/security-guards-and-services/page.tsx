@@ -9,7 +9,7 @@ export default function SecuriGuardAndServicesPage() {
         title="Security Guards and Services"
         image="/images/security-guard-banner.webp"
       />
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">Our Security Services</h4>
         <div className="content">
           <p>
@@ -28,7 +28,7 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Security Protocol</h4>
+        <h4 className="text-primary font-bold">Security Protocol</h4>
         <div className="content">
           <p>
             AGGFM’s security patrols are a highly visible deterrent to crime,
@@ -36,7 +36,7 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Static Guards</h4>
+        <h4 className="text-primary font-bold">Static Guards</h4>
         <div className="content">
           <p>
             For a more permanent security presence, our static guards can be
@@ -45,7 +45,7 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Maintaining CCTV</h4>
+        <h4 className="text-primary font-bold">Maintaining CCTV</h4>
         <div className="content">
           <p>
             AGGFM’s team of qualified security technicians can maintain and
@@ -54,7 +54,7 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">
+        <h4 className="text-primary font-bold">
           Monitoring & Maintaining access control
         </h4>
         <div className="content">
@@ -65,7 +65,9 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Site inductions and compliance</h4>
+        <h4 className="text-primary font-bold">
+          Site inductions and compliance
+        </h4>
         <div className="content">
           <p>
             AGGFM’s Security team can provide comprehensive inductions for new
@@ -74,7 +76,7 @@ export default function SecuriGuardAndServicesPage() {
           </p>
         </div>
 
-        <h4 className="content-title">Emergency response</h4>
+        <h4 className="text-primary font-bold">Emergency response</h4>
         <div className="content">
           <p>
             In the event of an emergency, AGGFM security guards are trained to

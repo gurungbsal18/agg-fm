@@ -9,7 +9,7 @@ export default function CleaningServicesPage() {
         title="Cleaning Services"
         image="/images/cleaning-service-banner.webp"
       />
-      <div className="container">
+      <div className="container animation-block">
         <CleaningServiceTabView />
       </div>{" "}
     </div>

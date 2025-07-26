@@ -12,7 +12,7 @@ export default function InventoryFixedAssetsTaggingServicePage() {
         <h4 className="content-title">
           Inventory Fixed Assets Tagging Service
         </h4>
-        <div className="content">
+        <div className="content animation-block">
           <p>
             Inventory Asset tagging services involve the process of labeling
             physical assets with unique identifiers, such as barcodes, QR codes,
@@ -21,7 +21,9 @@ export default function InventoryFixedAssetsTaggingServicePage() {
             better visibility and control over their assets, leading to improved
             efficiency, reduced losses, and enhanced operational performance. 
           </p>
-          <p className="font-bold">Our Asset Tagging Services Offers:</p>
+          <h4 className="font-bold text-primary">
+            Our Asset Tagging Services Offers:
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>
               Asset Identification: Assigning unique identifiers to each asset.
@@ -42,47 +44,49 @@ export default function InventoryFixedAssetsTaggingServicePage() {
             </li>
           </ul>
 
-          <p className="font-bold">Benefits of Asset Tagging Services:</p>
+          <h4 className="font-bold text-primary">
+            Benefits of Asset Tagging Services:
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>Improved Asset Management</li>
           </ul>
 
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Organizations can easily track and manage their assets, leading to
             better utilization and reduced losses.
-          </p>
+          </h4>
           <ul className="list-dic pl-5 pb-5">
             <li>Enhanced Operational Efficiency</li>
           </ul>
 
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Streamlined processes for tracking, maintenance, and inventory
             management contribute to improved operational efficiency.
-          </p>
+          </h4>
           <ul className="list-dic pl-5 pb-5">
             <li>Reduced Costs</li>
           </ul>
 
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Proper asset management can minimize expenses related to lost or
             misplaced assets, maintenance, and insurance.
-          </p>
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>Better Decision-Making</li>
           </ul>
 
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Accurate asset data enables informed decisions regarding asset
             replacement, maintenance, and resource allocation.
-          </p>
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>Compliance</li>
           </ul>
 
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Asset tagging can help organizations comply with regulatory
             requirements and industry standards.
-          </p>
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>Risk Mitigation</li>
           </ul>
@@ -93,10 +97,10 @@ export default function InventoryFixedAssetsTaggingServicePage() {
           </p>
 
           <p>Industries Utilizing Asset Tagging:</p>
-          <p className="font-bold">
+          <h4 className="font-bold text-primary">
             Asset tagging services are used across various industries,
             including:
-          </p>
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>
               Healthcare: Tracking medical equipment, patient records, and other
@@ -127,7 +131,9 @@ export default function InventoryFixedAssetsTaggingServicePage() {
             </li>
           </ul>
 
-          <p className="font-bold">Key Components of Asset Tagging:</p>
+          <h4 className="font-bold text-primary">
+            Key Components of Asset Tagging:
+          </h4>
           <ul className="list-disc pl-5 pb-5">
             <li>Asset Identification</li>
           </ul>

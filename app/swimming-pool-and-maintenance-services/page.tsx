@@ -10,7 +10,7 @@ export default function SwimmingPoolAndMaintenanceService() {
         image="/images/swimming-pool-cleaning.webp"
       />
 
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">
           AGGFM's Swimming Pool Maintenance Services
         </h4>
@@ -25,7 +25,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           <p>Key aspect of swimming pool maintenance services:</p>
         </div>
 
-        <h4 className="content-title">Regular Cleaning:</h4>
+        <h4 className="font-bold text-primary">Regular Cleaning:</h4>
         <div className="content">
           <p>
             This involves skimming debris, vaccuming the pool floor and walls,
@@ -33,7 +33,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Chemical Cleaning:</h4>
+        <h4 className="font-bold text-primary">Chemical Cleaning:</h4>
         <div className="content">
           <p>
             Testing and adjusting water chemistry (pH, chlorine, etc.) to
@@ -42,7 +42,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Filteration Maintenance:</h4>
+        <h4 className="font-bold text-primary">Filteration Maintenance:</h4>
         <div className="content">
           <p>
             Cleaning or backwashing filters to ensure optimal water circulation
@@ -50,7 +50,9 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Equipment Inspection and Maintenance:</h4>
+        <h4 className="font-bold text-primary">
+          Equipment Inspection and Maintenance:
+        </h4>
         <div className="content">
           <p>
             Checking pumps, filters, and other equipment for proper
@@ -58,7 +60,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">
+        <h4 className="font-bold text-primary">
           Water Level Monitoring and Adjustment:
         </h4>
         <div className="content">
@@ -68,7 +70,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Tile and Surface Cleaning:</h4>
+        <h4 className="font-bold text-primary">Tile and Surface Cleaning:</h4>
         <div className="content">
           <p>
             Cleaning the pool's tiles and surfaces to remove dirt, grime, and
@@ -76,7 +78,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Specialized Treatments:</h4>
+        <h4 className="font-bold text-primary">Specialized Treatments:</h4>
         <div className="content">
           <p>
             Addressing specific issues like algae blooms, stains, or acid
@@ -84,7 +86,7 @@ export default function SwimmingPoolAndMaintenanceService() {
           </p>
         </div>
 
-        <h4 className="content-title">Professional Advice:</h4>
+        <h4 className="font-bold text-primary">Professional Advice:</h4>
         <div className="content">
           <p>
             Consultancy as experienced pool maintenance professionals for

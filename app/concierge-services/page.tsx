@@ -10,7 +10,7 @@ export default function ConciergeServicesPage() {
         image="/images/service-conciergerie.webp"
       />
 
-      <div className="container">
+      <div className="container animation-block">
         <h4 className="content-title">Concierge Services</h4>
         <div className="content">
           <p>

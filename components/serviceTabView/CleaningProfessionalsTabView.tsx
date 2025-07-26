@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@heroui/button";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 type detailProps = {
   id: number;
@@ -100,9 +100,22 @@ const keyCleanData: cleaningProfessionalsDataProps[] = [
 export default function CleaningProfessionalsTabView() {
   const [activeTab, setActiveTab] = useState("general");
 
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(false);
+    const timeout = setTimeout(() => setAnimate(true), 50);
+    return () => clearTimeout(timeout);
+  }, [activeTab]);
+
   const renderData = (data: cleaningProfessionalsDataProps[]) => {
     return data.map((list, index) => (
-      <div key={index} className="grid grid-1 md:grid-cols-12 gap-8 mt-8">
+      <div
+        key={index}
+        className={`grid grid-cols-1 md:grid-cols-12 gap-8 mt-8 ${
+          animate ? "hero-title-animation animate" : "hero-title-animation"
+        }`}
+      >
         <div className="col-span-12 md:col-span-4">
           <Image
             src={list.image || "/aggfm-logo.svg"}

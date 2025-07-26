@@ -75,6 +75,9 @@ export default function FooterSection() {
                 <Link href="/cleaning-professionals">
                   <li className="hover:underline">Cleaning Professionals</li>
                 </Link>
+                <Link href="/cleaning-services">
+                  <li className="hover:underline">Cleaning Services</li>
+                </Link>
                 <Link href="/swimming-pool-and-maintenance-services">
                   <li className="hover:underline">
                     Swimming Pool and Maintenance Services
