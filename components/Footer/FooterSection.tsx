@@ -50,7 +50,9 @@ export default function FooterSection() {
             <p className="font-bold text-xl">Useful Links</p>
             <div className="flex flex-col gap-2 my-4">
               <ul className="flex flex-col gap-2 text-sm">
-                <li className="hover:underline">Our Services</li>
+                <Link href="/our-services">
+                  <li className="hover:underline">Our Services</li>
+                </Link>
                 <Link href="/about-us">
                   <li className="hover:underline">About us</li>
                 </Link>

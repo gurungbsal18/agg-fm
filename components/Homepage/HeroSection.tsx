@@ -45,7 +45,7 @@ export default function HeroSection() {
             For The Future
           </h1>
           <div className="flex items-start justify-center gap-4 w-full">
-            <Link href="/">
+            <Link href="/our-services">
               <Button radius="sm" variant="shadow" color="primary">
                 <LuSearch /> Explore Services
               </Button>

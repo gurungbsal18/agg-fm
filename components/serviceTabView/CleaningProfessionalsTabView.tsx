@@ -80,7 +80,7 @@ const executiveCleaningData: cleaningProfessionalsDataProps[] = [
 
 const keyCleanData: cleaningProfessionalsDataProps[] = [
   {
-    title: "Key cleaning area",
+    title: "Key cleaning environments",
     image: "/images/key-cleaning.webp",
     detail: [
       {
@@ -105,7 +105,7 @@ const keyCleanData: cleaningProfessionalsDataProps[] = [
       },
       {
         id: 3,
-        content: "Airport Cleaning",
+        content: "Office Cleaning",
       },
       {
         id: 4,
@@ -195,7 +195,7 @@ export default function CleaningProfessionalsTabView() {
           color={activeTab === "keyClean" ? "primary" : "primary"}
           variant={activeTab === "keyClean" ? "solid" : "flat"}
         >
-          Key cleaning area
+          Key cleaning environments
         </Button>
       </div>
 
