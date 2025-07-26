@@ -1,29 +1,37 @@
 import emailjs from "@emailjs/browser";
 
-const sendEmail = (data: emailData) => {
-  emailjs
+interface EmailData {
+  fullName: string;
+  email: string;
+  address: string;
+  phone: string;
+  message: string;
+}
+
+const sendEmail = (data: EmailData) => {
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
+
+  return emailjs
     .send(
-      "service_o6krszm",
-      "template_3ezmls8",
+      serviceID,
+      templateID,
       {
-        firstName: data.firstName,
-        lastName: data.lastName,
+        fullName: data.fullName,
+        email: data.email,
         address: data.address,
         phone: data.phone,
         message: data.message,
       },
-      {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
-      }
+      publicKey
     )
-    .then(
-      () => {
-        console.log("SUCCESS!");
-      },
-      (error) => {
-        console.log("FAILED...", error.text);
-      }
-    );
+    .then(() => {
+      console.log("SUCCESS!");
+    })
+    .catch((error) => {
+      console.error("FAILED...", error.text);
+    });
 };
 
 export default sendEmail;

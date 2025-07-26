@@ -6,8 +6,8 @@ import sendEmail from "./utils/EmailUtils";
 
 export default function ContactForm() {
   const initialFormData = {
-    firstName: "",
-    lastName: "",
+    fullName: "",
+    email: "",
     phone: "",
     address: "",
     message: "",
@@ -42,11 +42,11 @@ export default function ContactForm() {
             <Input
               isRequired
               errorMessage="Required"
-              label="First name"
+              label="Full name"
               labelPlacement="inside"
-              name="firstName"
+              name="fullName"
               type="text"
-              value={formData.firstName}
+              value={formData.fullName}
               onChange={handleChange}
             />
           </span>
@@ -54,11 +54,11 @@ export default function ContactForm() {
             <Input
               isRequired
               errorMessage="Required"
-              label="Last name"
+              label="Email Address"
               labelPlacement="inside"
-              name="lastName"
-              type="text"
-              value={formData.lastName}
+              name="email"
+              type="email"
+              value={formData.email}
               onChange={handleChange}
             />
           </span>

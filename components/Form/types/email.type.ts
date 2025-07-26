@@ -1,6 +1,6 @@
 interface emailData {
-  firstName: string;
-  lastName: string;
+  fullName: string;
+  email: string;
   phone: string;
   message: string;
   address: string;
