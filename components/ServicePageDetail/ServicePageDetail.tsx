@@ -390,7 +390,7 @@ export default function ServicePageDetail() {
               assets, leading to improved efficiency, reduced losses, and
               enhanced operational performance.
             </p>
-            <Link href="/security-guards-and-services">
+            <Link href="/inventory-fixed-assets-tagging-service/">
               <Button radius="sm" color="primary" className="mt-4">
                 View Detail
               </Button>
