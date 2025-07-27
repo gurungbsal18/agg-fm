@@ -43,7 +43,7 @@ export default function LandscapeMaintenanceServices() {
           </p>
         </div>
 
-        <h4 className="font-bold text-primary">Hardscape Maintenance:</h4>
+        <h4 className="font-bold text-primary">Landscape Maintenance:</h4>
         <div className="content">
           <p>
             Maintaining walkways, driveways, patios, retaining walls, and other
@@ -105,15 +105,6 @@ export default function LandscapeMaintenanceServices() {
           </ul>
         </div>
       </div>
-
-      {/* <div className="page-banner">
-        <Image
-          src="/images/landscape-1.webp"
-          alt="lawn care"
-          width={1920}
-          height={1080}
-        />
-      </div> */}
     </div>
   );
 }

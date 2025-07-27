@@ -221,7 +221,7 @@ export default function ServicePageDetail() {
             <ul className="list-decimal ms-5">
               <li>Lawn care</li>
               <li>Plant health</li>
-              <li>Handscape maintenance</li>
+              <li>Landscape maintenance</li>
               <li>Irrigation system</li>
               <li>Debris removal</li>
               <li>Fertilization and soil health</li>
