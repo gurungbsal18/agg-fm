@@ -41,7 +41,7 @@ export default function HeroSection() {
             className="title text-white text-center mb-4 hero-title-animation"
           >
             AGG Facilities Management PLT <br />
-            As An Integrated Facilities Mangement <br />
+            As An Integrated Facilities Management <br />
             For The Future
           </h1>
           <div className="flex items-start justify-center gap-4 w-full">
