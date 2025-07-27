@@ -1,8 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "AGG FM",
+  description:
+    "AGG Facilities Management PLT As An Integrated Facilities Management For The Future",
   navItems: [
     {
       label: "Home",

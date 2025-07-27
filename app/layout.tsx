@@ -13,10 +13,7 @@ import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget/WhatsAppWidget";
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: "AGGFM",
-  },
+  title: "AGG FM",
   description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
