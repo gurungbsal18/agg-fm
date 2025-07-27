@@ -430,7 +430,7 @@ export default function ServicePageDetail() {
               conducted smoothly, compliantly, and in accordance with relevant
               regulations.
             </p>
-            <Link href="/security-guards-and-services">
+            <Link href="/agm-egm-services/">
               <Button radius="sm" color="primary" className="mt-4">
                 View Detail
               </Button>
