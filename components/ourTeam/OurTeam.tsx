@@ -16,7 +16,7 @@ interface TeamMember {
 const teamData: TeamMember[] = [
   {
     id: 1,
-    image: "/images/team/team-1.webp",
+    image: "/images/team/damodran.webp",
     name: "Damodran Madavan",
     position: "Co-Founder",
     detail:
@@ -24,7 +24,7 @@ const teamData: TeamMember[] = [
   },
   {
     id: 2,
-    image: "/aggfm-logo.svg",
+    image: "/images/team/priyaa.webp",
     name: "Priyaa Mukiah",
     position: "CEO",
     detail:
@@ -32,7 +32,7 @@ const teamData: TeamMember[] = [
   },
   {
     id: 3,
-    image: "/images/team/team-3.webp",
+    image: "/images/team/vincenzo.webp",
     name: "Vincenzo Ricci",
     position: "Chief Operating Officer",
     detail:
@@ -40,7 +40,7 @@ const teamData: TeamMember[] = [
   },
   {
     id: 4,
-    image: "/images/team/team-4.webp",
+    image: "/images/team/reuben.webp",
     name: "Reuben Semeyon",
     position: "Director of Asset Management",
     detail:
@@ -48,7 +48,7 @@ const teamData: TeamMember[] = [
   },
   {
     id: 5,
-    image: "/images/team/team-2.webp",
+    image: "/images/team/vicnesh.webp",
     name: "Vicnesh Muthukrishna",
     position: "HR and Administration Director",
     detail:
