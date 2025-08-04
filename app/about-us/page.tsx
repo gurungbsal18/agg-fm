@@ -54,7 +54,6 @@ export default function AboutUsPage() {
           </p>
         </div>
 
-        <OurTeam />
       </div>
     </>
   );
