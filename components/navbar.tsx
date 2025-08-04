@@ -150,6 +150,9 @@ export default function Navbar() {
             </div>
           </li>
 
+          <li className={pathname === "/our-team" ? "text-primary" : ""}>
+            <Link href="/our-team">Our Team</Link>
+          </li>
           <li className={pathname === "/about-us" ? "text-primary" : ""}>
             <Link href="/about-us">About us</Link>
           </li>
@@ -228,6 +231,15 @@ export default function Navbar() {
                     ))}
                   </ul>
                 </div>
+              </li>
+              <li
+                className={`font-bold ${
+                  pathname === "/our-team" ? "text-primary" : "text-primary/60"
+                }`}
+              >
+                <Link href="/our-team" onClick={() => setIsOpen(true)}>
+                  Our Team
+                </Link>
               </li>
               <li
                 className={`font-bold ${
